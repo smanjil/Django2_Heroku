@@ -1,0 +1,53 @@
+
+{% load static %}
+
+<html>
+	<head>
+		<title>Listing Page</title>
+		
+		<link rel="stylesheet" type="text/css" href="{% static 'genericviews/css/bootstrap.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'genericviews/css/style.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'genericviews/css/devicon.min.css' %}" />
+		<script src="{% static 'genericviews/js/jquery-3.2.1.min.js' %}"></script>
+		<script src="{% static 'genericviews/js/tether.min.js' %}"></script>
+		<script src="{% static 'genericviews/js/bootstrap.js' %}"></script>
+	</head>
+	<body>
+		{% if product_list %}
+			{% if is_paginated %}
+				{% if page_obj.has_previous %}
+							<a href="?page={{ page_obj.previous_page_number }}">previous</a>
+					{% endif %}
+					<span>
+						Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+				</span>
+				{% if page_obj.has_next %}
+					<a href="?page={{ page_obj.next_page_number }}">next</a>
+				{% endif %}
+			{% endif %}
+	
+			<form action="{% url 'genericviews:index' %}" method="get">
+				<select name="paginate_by" id='paginate_options'>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<input type='submit' value='Get Paginate'>
+			</form>
+			
+			<h1>Buy Wrist Watches!</h1>
+			<ul>
+				{% for product in product_list %}
+					<li><a href = "{% url 'genericviews:detail' product.id %}">{{ product.title }}</a></li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<h3>No product found</h3>
+		{% endif %}
+	
+		<script type="text/javascript">
+			document.getElementById('paginate_options').value = {{ page_obj.paginator.per_page }};
+		</script>
+	</body>
+</html>
