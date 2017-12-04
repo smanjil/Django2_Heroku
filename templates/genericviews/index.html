@@ -20,15 +20,22 @@
 			{% endif %}
 		</div>
 
+		{% block breadcrumbs %}
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Home</a></li>
+				<li class="breadcrumb-item active">Product Listing</li>
+			</ol>
+		{% endblock %}
+
 		<div class="row">
 			<div class="col-6 col-sm-3">
 				<form class="form-inline" action="{% url 'genericviews:index' %}" method="get">
 					<div class="form-group">
 						<select class="form-control" name="paginate_by" id='paginate_options'>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="10">10</option>
+							<option value="15">15</option>
+							<option value="20">20</option>
 						</select>
 					</div>
 					<div class="form-group">

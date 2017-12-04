@@ -7,6 +7,13 @@
 {% endblock %}
 
 {% block content %}
+	{% block breadcrumbs %}
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Home</a></li>
+			<li class="breadcrumb-item active">Product Detail</li>
+		</ol>
+	{% endblock %}
+
 	<h1 align="center">{{ product.title }}</h1>
 	<h3 align="center">{{ product.desc }}</h1>
 

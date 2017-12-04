@@ -42,7 +42,9 @@
             </nav>
         {% endblock %}
 
-        {% block content %}{% endblock %}
+        {% block content %}
+            {% block breadcrumbs %}{% endblock %}
+        {% endblock %}
 
         {% block javascript %}{% endblock %}
     </body>
