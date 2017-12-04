@@ -1,13 +1,32 @@
 
+{% extends 'genericviews/base.html' %}
 
 
-<h1>{{ product.title }}</h1>
-<h3>{{ product.desc }}</h1>
+{% block title %}
+	Detail Page
+{% endblock %}
 
-<h1>Buy Wrist Watches!</h1>
+{% block content %}
+	<h1 align="center">{{ product.title }}</h1>
+	<h3 align="center">{{ product.desc }}</h1>
 
-{% for items in new_list %}
-	<ul>
-		<li><a href = "{% url 'genericviews:detail' items.id %}">{{ items.title }}</a></li>
-	</ul>
-{% endfor %}
+	<hr>
+	<div class="container">
+		<h1 align="center">Similar Watches!</h1>
+
+		<table class="table table-sm">			
+			<tr>
+				<th>#</th>
+				<th>Titles</th>
+			</tr>
+			{% for items in new_list %}
+				<tr style="height: 20px;">
+					<td>{{ forloop.counter }}</td>
+					<td><a href = "{% url 'genericviews:detail' items.id %}">{{ items.title }}</a></td>
+				</tr>
+			{% endfor %}
+		</table>
+
+		<a href="{% url 'genericviews:index' %}">Back to watch listings!</a>
+	</div>
+{% endblock %}

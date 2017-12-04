@@ -1,99 +1,79 @@
 
-{% load static %}
+{% extends 'genericviews/base.html' %}
 
-<html>
-	<head>
-		<title>Listing Page</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link rel="stylesheet" type="text/css" href="{% static 'genericviews/css/bootstrap.css' %}" />
-		<link rel="stylesheet" type="text/css" href="{% static 'genericviews/css/style.css' %}" />
-		<link rel="stylesheet" type="text/css" href="{% static 'genericviews/css/devicon.min.css' %}" />
-		<script src="{% static 'genericviews/js/jquery-3.2.1.min.js' %}"></script>
-		<script src="{% static 'genericviews/js/tether.min.js' %}"></script>
-		<script src="{% static 'genericviews/js/bootstrap.js' %}"></script>
-	</head>
-	<body>
-		<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a class="navbar-brand" href="#">Navbar</a>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+{% block title %}
+	Index
+{% endblock %}
 
-		<div class="container">
-			<div class="row">
-				<div class="col-6 col-sm-3">
-					<form class="form-inline" action="{% url 'genericviews:index' %}" method="get">
-						<div class="form-group">
-							<select class="form-control" name="paginate_by" id='paginate_options'>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<input class="form-control" type='submit' value='Choose num of items'>
-						</div>
-					</form>
-				</div>
-				{% if product_list %}
-					{% if is_paginated %}
-						<div class="col-6 col-sm-3">
-							{% if page_obj.has_previous %}
-									<a href="?page={{ page_obj.previous_page_number }}">previous</a>
-							{% endif %}
-						</div>
-						<div class="col-6 col-sm-3">
-							<span>
-								Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-							</span>
-						</div>
-						<div class="col-6 col-sm-3">
-							{% if page_obj.has_next %}
-								<a href="?page={{ page_obj.next_page_number }}">next</a>
-							{% endif %}
-						</div>
-					{% endif %}
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="col-6 col-sm-3">
+				<form class="form-inline" action="{% url 'genericviews:index' %}" method="get">
+					<div class="form-group">
+						<select class="form-control" name="paginate_by" id='paginate_options'>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<input class="form-control" type='submit' value='Choose num of items'>
+					</div>
+				</form>
 			</div>
+			{% if product_list %}
+				{% if is_paginated %}
+					<div class="col-6 col-sm-3">
+						{% if page_obj.has_previous %}
+								<a href="?page={{ page_obj.previous_page_number }}">previous</a>
+						{% endif %}
+					</div>
+					<div class="col-6 col-sm-3">
+						<span>
+							Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+						</span>
+					</div>
+					<div class="col-6 col-sm-3">
+						{% if page_obj.has_next %}
+							<a href="?page={{ page_obj.next_page_number }}">next</a>
+						{% endif %}
+					</div>
+				{% endif %}
+		</div>
 
-			<div class="row">
-				<div class="col"></div>
-				<div class="col-6">
-						<h1>Buy Wrist Watches!</h1>
-				</div>
-				<div class="col"></div>					
+		<div class="row">
+			<div class="col"></div>
+			<div class="col-6">
+					<h1>Buy Wrist Watches!</h1>
 			</div>
-			
-			<div class="row">
-				<ul>
-					{% for product in product_list %}
-						<li><a href = "{% url 'genericviews:detail' product.id %}">{{ product.title }}</a></li>
-					{% endfor %}
-				</ul>
-			{% else %}
-				<h3>No product found</h3>
-			{% endif %}
-			</div>
-		</div>		
-	
-		<script type="text/javascript">
-			document.getElementById('paginate_options').value = {{ page_obj.paginator.per_page }};
-		</script>
-	</body>
-</html>
+			<div class="col"></div>					
+		</div>
+
+		<div class="row">
+			<table class="table table-sm">			
+				<tr>
+					<th>#</th>
+					<th>Titles</th>
+				</tr>
+				{% for product in product_list %}
+					<tr style="height: 20px;">
+						<td>{{ forloop.counter }}</td>
+						<td><a href = "{% url 'genericviews:detail' product.id %}">{{ product.title }}</a></td>
+					</tr>
+				{% endfor %}
+			</table>
+		{% else %}
+			<h3>No product found</h3>
+		{% endif %}
+		</div>
+	</div>		
+{% endblock %}
+
+{% block javascript %}
+	<script type="text/javascript">
+		document.getElementById('paginate_options').value = {{ page_obj.paginator.per_page }};
+	</script>
+{% endblock %}
