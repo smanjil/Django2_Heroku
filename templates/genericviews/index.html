@@ -8,6 +8,18 @@
 
 {% block content %}
 	<div class="container">
+		<div class="alert alert-success" role="alert">
+			{% if messages %}
+				<ul class="messages">
+					{% for message in messages %}
+						<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+							<strong>Well done!</strong> You successfully added a watch!
+						</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+		</div>
+
 		<div class="row">
 			<div class="col-6 col-sm-3">
 				<form class="form-inline" action="{% url 'genericviews:index' %}" method="get">

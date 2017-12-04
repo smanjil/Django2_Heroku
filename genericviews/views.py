@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
 from django.views import generic
+from django.contrib import messages
 
 # Create your views here.
 
@@ -23,7 +24,8 @@ def makeentry(request):
 
         form = ProductForm()
 
-        return render(request, 'genericviews/makeentry.html', {'form': form})
+        messages.add_message(request, messages.SUCCESS, 'redirect')
+        return HttpResponseRedirect('/genericviews/')
     else:
         form = ProductForm()
         return render(request, 'genericviews/makeentry.html', {'form': form})
