@@ -20,27 +20,35 @@
 						</select>
 					</div>
 					<div class="form-group">
-						<input class="form-control" type='submit' value='Choose num of items'>
+						<input class="form-control" type='submit' value='Choose!' style="width:90px;">
 					</div>
 				</form>
 			</div>
 			{% if product_list %}
 				{% if is_paginated %}
-					<div class="col-6 col-sm-3">
-						{% if page_obj.has_previous %}
-								<a href="?page={{ page_obj.previous_page_number }}">previous</a>
-						{% endif %}
-					</div>
-					<div class="col-6 col-sm-3">
-						<span>
-							Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-						</span>
-					</div>
-					<div class="col-6 col-sm-3">
-						{% if page_obj.has_next %}
-							<a href="?page={{ page_obj.next_page_number }}">next</a>
-						{% endif %}
-					</div>
+					<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-center">
+							{% if page_obj.has_previous %}
+								<li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a></li>
+							{% else %}
+								<li class="disabled"><span>Previos</span></li>
+							{% endif %}
+
+							{% for i in page_obj.paginator.page_range %}
+								{% if page_obj.number == i %}
+									<li class="active"><span class="page-link">{{ i }} <span class="sr-only">(current)</span></span></li>
+								{% else %}
+									<li><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+								{% endif %}
+							{% endfor %}
+
+							{% if page_obj.has_next %}
+								<li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>
+							{% else %}
+								<li class="disabled"><span>Next</span></li>
+							{% endif %}
+						</ul>
+					</nav>
 				{% endif %}
 		</div>
 
@@ -74,6 +82,8 @@
 
 {% block javascript %}
 	<script type="text/javascript">
-		document.getElementById('paginate_options').value = {{ page_obj.paginator.per_page }};
+		$(function () {
+			$('#paginate_options').val({{ page_obj.paginator.per_page }});
+		});
 	</script>
 {% endblock %}
