@@ -21,7 +21,7 @@
 			</tr>
 			{% for items in new_list %}
 				<tr style="height: 20px;">
-					<td>{{ forloop.counter }}</td>
+					<td>{{ items.id }}</td>
 					<td><a href = "{% url 'genericviews:detail' items.id %}">{{ items.title }}</a></td>
 				</tr>
 			{% endfor %}

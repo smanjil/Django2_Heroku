@@ -60,7 +60,7 @@
 				</tr>
 				{% for product in product_list %}
 					<tr style="height: 20px;">
-						<td>{{ forloop.counter }}</td>
+						<td>{{ product.id }}</td>
 						<td><a href = "{% url 'genericviews:detail' product.id %}">{{ product.title }}</a></td>
 					</tr>
 				{% endfor %}
