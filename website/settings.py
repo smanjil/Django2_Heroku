@@ -79,13 +79,26 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# local
+# DATABASES = {
+#         'default': {
+#                     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#                     'NAME': 'django2',
+#                     'USER': 'postgres',
+#                     'PASSWORD': '',
+#                     'HOST': '127.0.0.1',
+#                     'PORT': '5432',
+#                 }
+# }
+
+# heroku
 DATABASES = {
         'default': {
                     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                    'NAME': 'django2',
-                    'USER': 'postgres',
-                    'PASSWORD': '',
-                    'HOST': 'test-django-pg.herokuapp.com',
+                    'NAME': 'd846bag7b0airf',
+                    'USER': 'fdwipwfwwaijwt',
+                    'PASSWORD': 'ed5aeb70d59d4476cdc17f1ee82f3630bd1fde1a3f58eb75206f85dc8dfff960',
+                    'HOST': 'ec2-54-243-211-197.compute-1.amazonaws.com',
                     'PORT': '5432',
                 }
 }
@@ -138,11 +151,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-
-import dj_database_url
-DATABASES = {default': dj_database_url.config()}
-
 
 # import dj_database_url
 # db_from_env = dj_database_url.config(conn_max_age=500)
