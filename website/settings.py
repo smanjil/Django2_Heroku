@@ -85,7 +85,7 @@ DATABASES = {
                     'NAME': 'django2',
                     'USER': 'postgres',
                     'PASSWORD': '',
-                    'HOST': 'localhost',
+                    'HOST': 'test-django-pg.herokuapp.com',
                     'PORT': '5432',
                 }
 }
