@@ -84,11 +84,16 @@
 				<tr>
 					<th>#</th>
 					<th>Titles</th>
+					<th>Actions</th>
 				</tr>
 				{% for product in product_list %}
 					<tr style="height: 20px;">
 						<td>{{ product.id }}</td>
 						<td><a href = "{% url 'genericviews:detail' product.id %}">{{ product.title }}</a></td>
+						<td>
+							<a href="{% url 'genericviews:edit' product.id %}">Edit</a> | 
+							<a href="{% url 'genericviews:delete' product.id %}">Delete</a>
+						</td>
 					</tr>
 				{% endfor %}
 			</table>

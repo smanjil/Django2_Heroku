@@ -7,5 +7,7 @@ app_name = 'genericviews'
 urlpatterns = [
     path('', views.IndexView.as_view(), name = 'index'),
     path('<int:pk>', views.DetailsView.as_view(), name = 'detail'),
+    path('edit/<int:pk>', views.EditView.as_view(), name = 'edit'),
+    path('delete/<int:pk>', views.DeleteView.as_view(), name = 'delete'),
     path('makeentry', views.makeentry, name = 'makeentry')
 ]

@@ -2,7 +2,7 @@
 {% extends 'genericviews/base.html' %}
 
 {% block title %}
-	Product Entry
+	Product Update
 {% endblock %}
 	
 {% block content %}
@@ -14,11 +14,11 @@
 	{% endblock %}
 
 	<div class="container">
-		<form class="form-inline" action = "{% url 'genericviews:makeentry' %}" method = 'POST'>
+		<form class="form-inline" action = "" method = 'POST'>
 			<div class="form-group">
 				{% csrf_token %}
-				{{ form }}
-				<input type = 'submit' value = 'Create'>
+				{{ form.as_p }}
+				<input type = 'submit' value = 'Update'>
 			</div>
 		</form>
 	</div>

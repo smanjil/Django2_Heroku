@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.shortcuts import render, HttpResponseRedirect
+from django.shortcuts import render, HttpResponseRedirect, reverse
 from django.views import generic
 from django.contrib import messages
 
@@ -60,3 +60,14 @@ class DetailsView(generic.DetailView):
 
         return context
 
+class EditView(generic.UpdateView):
+    model = Product
+    fields = ['title', 'desc']
+    template_name_suffix = '_update_form'
+
+    def get_success_url(self):
+        messages.add_message(self.request, messages.SUCCESS, 'redirect')
+        return reverse('genericviews:detail', kwargs = {'pk': self.kwargs['pk']})
+
+class DeleteView(generic.DetailView):
+    model = Product
