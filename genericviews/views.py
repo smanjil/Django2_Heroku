@@ -35,7 +35,7 @@ class IndexView(generic.ListView):
     context_object_name = 'product_list'
     template_name = 'genericviews/index.html'
     paginate_by = 2
-    queryset = Product.objects.all()
+    queryset = Product.objects.all().order_by('id')
 
     def get_paginate_by(self, queryset):
         if 'paginate_by' in self.request.GET:
@@ -56,7 +56,7 @@ class DetailsView(generic.DetailView):
     def get_context_data(self, **kwargs):
         context = super(DetailsView, self).get_context_data(**kwargs)
 
-        context['new_list'] = Product.objects.all()
+        context['new_list'] = Product.objects.all().order_by('id')
 
         return context
 
