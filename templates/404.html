@@ -6,7 +6,17 @@
 {% endblock %}
 	
 {% block content %}
-	<div class="container">
-		<h2>Sorry, the requested thing does not exist!</h2>
+	<div class="card text-center">
+		<div class="card-header">
+			Page not found!
+		</div>
+		<div class="card-block">
+			<h4 class="card-title">Oops!</h4>
+			<p class="card-text">Sorry, the requested thing does not exist!</p>
+			<a href="{% url 'genericviews:index' %}" class="btn btn-primary">Go to main page</a>
+		</div>
+		<div class="card-footer text-muted">
+			This is not the end! :)
+		</div>
 	</div>
 {% endblock %}
