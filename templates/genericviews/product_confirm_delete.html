@@ -2,14 +2,14 @@
 {% extends 'genericviews/base.html' %}
 
 {% block title %}
-	Product Update
+	Product Delete
 {% endblock %}
 	
 {% block content %}
 	{% block breadcrumbs %}
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="#">Home</a></li>
-			<li class="breadcrumb-item active">Update Product</li>
+			<li class="breadcrumb-item active">Delete Product</li>
 		</ol>
 	{% endblock %}
 
@@ -17,8 +17,8 @@
 		<form class="form-inline" action = "" method = 'POST'>
 			<div class="form-group">
 				{% csrf_token %}
-				{{ form.as_p }}
-				<input type = 'submit' value = 'Update'>
+				<p>Are you sure you want to delete "{{ object }}"?</p>
+                <input type="submit" value="Confirm" />
 			</div>
 		</form>
 	</div>

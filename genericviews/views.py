@@ -69,5 +69,9 @@ class EditView(generic.UpdateView):
         messages.add_message(self.request, messages.SUCCESS, 'redirect')
         return reverse('genericviews:detail', kwargs = {'pk': self.kwargs['pk']})
 
-class DeleteView(generic.DetailView):
+class DeleteView(generic.DeleteView):
     model = Product
+
+    def get_success_url(self):
+        messages.add_message(self.request, messages.INFO, 'redirect')
+        return reverse('genericviews:index')

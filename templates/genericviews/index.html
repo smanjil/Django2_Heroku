@@ -12,9 +12,15 @@
 			{% if messages %}
 				<ul class="messages">
 					{% for message in messages %}
-						<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
-							<strong>Well done!</strong> You successfully added a watch!
-						</li>
+						{% if message.tags == 'success' %}
+							<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+								<strong>Well done!</strong> You successfully added a watch!
+							</li>
+						{% elif message.tags == 'info' %}
+							<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+								<strong>Well done!</strong> You successfully deleted a watch!
+							</li>
+						{% endif %}
 					{% endfor %}
 				</ul>
 			{% endif %}
