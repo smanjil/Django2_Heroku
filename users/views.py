@@ -2,13 +2,20 @@
 from __future__ import unicode_literals
 
 from django import forms
-from django.urls import reverse, reverse_lazy
+from django.urls import (
+    reverse, 
+    reverse_lazy
+)
 from django.views.generic import FormView
 from django.views.generic.edit import CreateView
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import (
+    authenticate, 
+    login,
+    logout
+)
 
 from users.forms import (
     RegisterForm,
@@ -46,3 +53,7 @@ class LoginView(FormView):
         else:
             messages.add_message(self.request, messages.ERROR, 'redirect')
             return HttpResponseRedirect('/users/login')
+
+def logout_user(request):
+    logout(request)
+    return HttpResponseRedirect('/users/login')
