@@ -8,13 +8,15 @@ from django.shortcuts import (
 )
 from django.views import generic
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
 
 from genericviews.forms import ProductForm
 from genericviews.models import Product
 
-
+@login_required(login_url='/users/login')
 def makeentry(request):
     if request.method == 'POST':
         form = ProductForm(request.POST)
@@ -34,12 +36,15 @@ def makeentry(request):
         form = ProductForm()
         return render(request, 'genericviews/makeentry.html', {'form': form})
 
-class IndexView(generic.ListView):
+class IndexView(LoginRequiredMixin, generic.ListView):
     model = Product
     context_object_name = 'product_list'
     template_name = 'genericviews/index.html'
     paginate_by = 2
     queryset = Product.objects.all().order_by('id')
+
+    login_url = '/users/login'
+    redirect_field_name = 'redirect_to'
 
     def get_paginate_by(self, queryset):
         if 'paginate_by' in self.request.GET:
@@ -53,9 +58,12 @@ class IndexView(generic.ListView):
         
         return self.paginate_by
 
-class DetailsView(generic.DetailView):
+class DetailsView(LoginRequiredMixin, generic.DetailView):
     model = Product
     template_name = 'genericviews/detail.html'
+
+    login_url = '/users/login'
+    redirect_field_name = 'redirect_to'
 
     def get_context_data(self, **kwargs):
         context = super(DetailsView, self).get_context_data(**kwargs)
@@ -64,17 +72,23 @@ class DetailsView(generic.DetailView):
 
         return context
 
-class EditView(generic.UpdateView):
+class EditView(LoginRequiredMixin, generic.UpdateView):
     model = Product
     fields = ['title', 'desc']
     template_name_suffix = '_update_form'
+
+    login_url = '/users/login'
+    redirect_field_name = 'redirect_to'
 
     def get_success_url(self):
         messages.add_message(self.request, messages.SUCCESS, 'redirect')
         return reverse('genericviews:detail', kwargs = {'pk': self.kwargs['pk']})
 
-class DeleteView(generic.DeleteView):
+class DeleteView(LoginRequiredMixin, generic.DeleteView):
     model = Product
+
+    login_url = '/users/login'
+    redirect_field_name = 'redirect_to'
 
     def get_success_url(self):
         messages.add_message(self.request, messages.INFO, 'redirect')
