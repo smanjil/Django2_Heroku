@@ -1,0 +1,61 @@
+
+{% extends 'genericviews/base.html' %}
+
+{% block title %}
+	Login
+{% endblock %}
+	
+{% block content %}
+	{% block breadcrumbs %}
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Home</a></li>
+			<li class="breadcrumb-item active">Login</li>
+		</ol>
+	{% endblock %}
+
+    <div class="container">
+        {% if messages %}
+			<div class="alert alert-success" role="alert">
+				<ul class="messages">
+                    {% for message in messages %}
+                        {% if message.tags == 'success' %}
+                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                                <strong>Well done!</strong> You successfully registered you account!
+                            </li>
+                        {% elif message.tags == 'error' %}
+                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                                <strong>Oops</strong> Either username or password did not match!
+                            </li>
+                        {% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+        {% endif %}
+        
+        <div class="row">
+            <div class="Absolute-Center is-Responsive">
+                <div id="logo-container">Login</div>
+                <div class="col-sm-12 col-md-10 col-md-offset-1">
+                    <form action="" id="loginForm" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            {{ form.username }}         
+                        </div>
+                        <div class="form-group input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            {{ form.password }}
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="submit" value="Login"></input>
+                        </div>
+                        <div class="form-group text-center">
+                            <a href="#">Forgot Password</a>&nbsp;
+                        </div>
+                    </form>        
+                </div>  
+            </div>    
+        </div>
+    </div>
+	
+{% endblock %}
