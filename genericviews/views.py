@@ -10,6 +10,7 @@ from django.views import generic
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import Q
 
 # Create your views here.
 
@@ -70,7 +71,7 @@ class DetailsView(LoginRequiredMixin, generic.DetailView):
     def get_context_data(self, **kwargs):
         context = super(DetailsView, self).get_context_data(**kwargs)
 
-        context['new_list'] = Product.objects.all().order_by('id')
+        context['new_list'] = Product.objects.all().filter(~Q(user = self.request.user)).order_by('id')
 
         return context
 

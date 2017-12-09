@@ -1,6 +1,6 @@
 
 body{
-    background: #00589F;
+    background: #000000;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00589F', endColorstr='#0073CF', GradientType=0);
     color: white;
   }
@@ -28,4 +28,8 @@ body{
     margin-bottom: 10px;
     width:150px;
     height:30px;
+}
+
+a {
+  color: red;
 }
