@@ -13,13 +13,26 @@
 		</ol>
 	{% endblock %}
 
-	<div class="container">
-		<form class="form-inline" action = "{% url 'genericviews:makeentry' %}" method = 'POST'>
-			<div class="form-group">
-				{% csrf_token %}
-				{{ form }}
-				<input type = 'submit' value = 'Create'>
-			</div>
-		</form>
-	</div>
+	<div class="row">
+		<div class="Absolute-Center is-Responsive">
+			<div id="logo-container">Create New Product</div>
+                <div class="col-sm-12 col-md-10 col-md-offset-1">
+                    <form action="{% url 'genericviews:makeentry' %}" method="POST">
+						{% csrf_token %}
+                        <div class="form-group input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            {{ form.title }}         
+                        </div>
+                        <div class="form-group input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            {{ form.desc }}
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="submit" value="Create"></input>
+                        </div>
+                    </form>        
+                </div>  
+            </div>    
+        </div>
+    </div>
 {% endblock %}

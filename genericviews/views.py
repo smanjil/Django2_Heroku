@@ -25,7 +25,7 @@ def makeentry(request):
             title = request.POST.get('title', '')
             desc = request.POST.get('desc', '')
 
-        product = Product(title = title, desc = desc)
+        product = Product(user = request.user, title = title, desc = desc)
         product.save()
 
         form = ProductForm()
@@ -41,10 +41,12 @@ class IndexView(LoginRequiredMixin, generic.ListView):
     context_object_name = 'product_list'
     template_name = 'genericviews/index.html'
     paginate_by = 2
-    queryset = Product.objects.all().order_by('id')
 
     login_url = '/users/login'
     redirect_field_name = 'redirect_to'
+
+    def get_queryset(self):
+        return Product.objects.all().filter(user = self.request.user).order_by('id')
 
     def get_paginate_by(self, queryset):
         if 'paginate_by' in self.request.GET:
