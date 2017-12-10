@@ -20,9 +20,11 @@ from django.urls import (
 )
 from django.conf.urls.static import static
 from django.contrib import admin
+from website import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.baseview, name = 'base'),
     path('genericviews/', include('genericviews.urls')),
     path('users/', include('users.urls')),
 ]

@@ -1,0 +1,41 @@
+
+{% extends 'genericviews/base.html' %}
+
+
+{% block title %}
+	Home
+{% endblock %}
+
+{% block navbar %}{% endblock %}
+
+{% block content %}
+	<div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3" style="color: black;">Classic Store</h1>
+                <p class="lead" style="color: black;">This is a system that lets you add as well manage products.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title" style="color: black;">Register here</h3>
+                    <p class="card-text" style="color: black;">To enjoy the beauty of this system, first register yourself as a user!</p>
+                    <a href="{% url 'users:register' %}" class="btn btn-primary">Register</a>
+                </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                <div class="card-block">
+                    <h3 class="card-title" style="color: black;">Login here</h3>
+                    <p class="card-text" style="color: black;">The beauty of this system is just a step ahead from you!</p>
+                    <a href="{% url 'users:login' %}" class="btn btn-primary">Login</a>
+                </div>
+                </div>
+            </div>
+        </div>
+	</div>		
+{% endblock %}
