@@ -17,20 +17,14 @@
         {% if messages %}
 			<div class="alert alert-success" role="alert">
 				<ul class="messages">
-                    {% for message in messages %}
-                        {% if message.tags == 'success' %}
-                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
-                                <strong>Well done!</strong> You successfully registered you account!
-                            </li>
-                        {% elif message.tags == 'error' %}
-                            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
-                                <strong>Oops</strong> Either username or password did not match!
-                            </li>
-                        {% endif %}
+					{% for message in messages %}
+						<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+							<strong>{{ message }}</strong>
+						</li>
 					{% endfor %}
 				</ul>
 			</div>
-        {% endif %}
+		{% endif %}
         
         <div class="row">
             <div class="Absolute-Center is-Responsive">

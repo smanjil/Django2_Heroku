@@ -30,7 +30,11 @@ class RegisterView(CreateView):
     template_name = 'users/register.html'
 
     def get_success_url(self):
-        messages.add_message(self.request, messages.SUCCESS, 'redirect')
+        messages.add_message(
+            self.request, 
+            messages.SUCCESS, 
+            'You have successfully registered your account!'
+        )
         return reverse('users:login')
 
 class LoginView(FormView):
@@ -45,15 +49,33 @@ class LoginView(FormView):
         username = form.data['username']
         password = form.data['password']
 
-        user = authenticate(request, username = username, password = password)
+        user = authenticate(
+            request, 
+            username = username, 
+            password = password
+        )
 
         if user is not None:
             login(request, user)
+            messages.add_message(
+                self.request, 
+                messages.SUCCESS, 
+                'You have successfully logged in!'
+            )
             return HttpResponseRedirect('/genericviews/')
         else:
-            messages.add_message(self.request, messages.ERROR, 'redirect')
+            messages.add_message(
+                self.request, 
+                messages.ERROR, 
+                'Oops! Login Error'
+            )
             return HttpResponseRedirect('/users/login')
 
 def logout_user(request):
+    messages.add_message(
+        request, 
+        messages.SUCCESS, 
+        'You have successfully logged out!'
+    )
     logout(request)
     return HttpResponseRedirect('/users/login')

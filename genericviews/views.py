@@ -41,7 +41,11 @@ class CreateProductView(LoginRequiredMixin, generic.FormView):
 
         form = ProductForm()
 
-        messages.add_message(request, messages.SUCCESS, 'redirect')
+        messages.add_message(
+            request, 
+            messages.SUCCESS, 
+            'You have successfully created a product!'
+        )
         return HttpResponseRedirect('/genericviews/')
 
 class IndexView(LoginRequiredMixin, generic.ListView):
@@ -91,7 +95,11 @@ class EditView(LoginRequiredMixin, generic.UpdateView):
     redirect_field_name = 'redirect_to'
 
     def get_success_url(self):
-        messages.add_message(self.request, messages.SUCCESS, 'redirect')
+        messages.add_message(
+            self.request, 
+            messages.SUCCESS, 
+            'You have successfully update the product!'
+        )
         return reverse('genericviews:detail', kwargs = {'pk': self.kwargs['pk']})
 
 class DeleteView(LoginRequiredMixin, generic.DeleteView):
@@ -101,5 +109,9 @@ class DeleteView(LoginRequiredMixin, generic.DeleteView):
     redirect_field_name = 'redirect_to'
 
     def get_success_url(self):
-        messages.add_message(self.request, messages.INFO, 'redirect')
+        messages.add_message(
+            self.request, 
+            messages.SUCCESS, 
+            'You have successfully deleted a product!'
+        )
         return reverse('genericviews:index')
