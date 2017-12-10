@@ -8,11 +8,11 @@
 {% block content %}
 	<div class="card text-center">
 		<div class="card-header">
-			Page not found!
+			<span style="color: red;">Page not found!</span>
 		</div>
 		<div class="card-block">
-			<h4 class="card-title">Oops!</h4>
-			<p class="card-text">Sorry, the requested thing does not exist!</p>
+			<h4 class="card-title" style="color: red;">Oops!</h4>
+			<p class="card-text" style="color: black;">Sorry, the requested thing does not exist!</p>
 			<a href="{% url 'genericviews:index' %}" class="btn btn-primary">Go to main page</a>
 		</div>
 		<div class="card-footer text-muted">
