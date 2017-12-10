@@ -34,8 +34,8 @@ class RegisterView(CreateView):
         return reverse('users:login')
 
 class LoginView(FormView):
-    form_class = LoginForm
     model = User
+    form_class = LoginForm
     template_name = 'users/login.html'
 
     def post(self, request, *args, **kwargs):
