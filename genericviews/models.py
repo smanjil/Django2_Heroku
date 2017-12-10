@@ -9,7 +9,6 @@ from django.contrib.auth.models import User
 class Product(models.Model):
     user = models.ForeignKey(
             User,
-            unique = True,
             on_delete = models.CASCADE
         )
     title = models.CharField(max_length = 100)

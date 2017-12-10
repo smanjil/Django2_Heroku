@@ -17,25 +17,32 @@ from django.db.models import Q
 from genericviews.forms import ProductForm
 from genericviews.models import Product
 
-@login_required(login_url='/users/login')
-def makeentry(request):
-    if request.method == 'POST':
-        form = ProductForm(request.POST)
+class CreateProductView(LoginRequiredMixin, generic.FormView):
+    model = Product
+    form_class = ProductForm
+    template_name = 'genericviews/makeentry.html'
 
-        if form.is_valid():
-            title = request.POST.get('title', '')
-            desc = request.POST.get('desc', '')
+    def get(self, request, *args, **kwargs):
+        form = ProductForm()
+        return render(request, 'genericviews/makeentry.html', {'form': form})
 
-        product = Product(user = request.user, title = title, desc = desc)
-        product.save()
+    def post(self, request, *args, **kwargs):
+        form_class = self.get_form_class()
+        form = self.get_form(form_class)
+
+        title = form.data['title']
+        desc = form.data['desc']
+
+        Product.objects.create(
+            user = request.user, 
+            title = title, 
+            desc = desc
+        )
 
         form = ProductForm()
 
         messages.add_message(request, messages.SUCCESS, 'redirect')
         return HttpResponseRedirect('/genericviews/')
-    else:
-        form = ProductForm()
-        return render(request, 'genericviews/makeentry.html', {'form': form})
 
 class IndexView(LoginRequiredMixin, generic.ListView):
     model = Product
