@@ -19,7 +19,8 @@ from django.contrib.auth import (
 
 from users.forms import (
     RegisterForm,
-    LoginForm
+    LoginForm,
+    ResetPasswordForm
 )
 
 # Create your views here.
@@ -79,3 +80,34 @@ def logout_user(request):
     )
     logout(request)
     return HttpResponseRedirect('/users/login')
+
+class ResetPasswordView(FormView):
+    model = User
+    form_class = ResetPasswordForm
+    template_name = 'users/password_reset.html'
+
+    def post(self, request, *args, **kwargs):
+        form_class = self.get_form_class()
+        form = self.get_form(form_class)
+
+        username = form.data['username']
+        password = form.data['password']
+
+        try:
+            user = User.objects.all().filter(username = username)[0]
+            user.set_password(password)
+            user.save()
+
+            messages.add_message(
+                self.request, 
+                messages.SUCCESS, 
+                'You have successfully changed your password!'
+            )
+            return HttpResponseRedirect('/users/login')
+        except:
+            messages.add_message(
+                self.request, 
+                messages.ERROR, 
+                'Oops! This user does not exist!'
+            )
+            return HttpResponseRedirect('/users/reset')

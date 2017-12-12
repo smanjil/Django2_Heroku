@@ -43,3 +43,16 @@ class LoginForm(forms.ModelForm):
                 'placeholder': 'password'
             })
         }
+
+class ResetPasswordForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['username', 'password']
+        widgets = {
+            'username': forms.TextInput({
+                'placeholder': 'username'
+            }),
+            'password': forms.PasswordInput({
+                'placeholder': 'new password'
+            })
+        }
