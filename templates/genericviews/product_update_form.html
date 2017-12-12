@@ -8,7 +8,11 @@
 {% block content %}
 	{% block breadcrumbs %}
 		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="{% url 'base' %}">Home</a></li>
+			{% if not request.user.is_authenticated %}
+				<li class="breadcrumb-item"><a href="{% url 'base' %}">Home</a></li>
+			{% else %}
+				<li class="breadcrumb-item"><a href="{% url 'genericviews:index' %}">Home</a></li>
+			{% endif %}
 			<li class="breadcrumb-item active">Update Product</li>
 		</ol>
 	{% endblock %}
