@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Product administration | Product administration Site{% endblock %}
+
+{% block extrastyle %}
+    <style>
+        #header {
+            background-color: black;
+        }
+    </style>
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name"><a href="{% url 'admin:index' %}">Product administration</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

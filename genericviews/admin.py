@@ -3,9 +3,8 @@ from __future__ import unicode_literals
 
 from django.contrib import admin
 
-
-admin.site.site_header = 'Product Administration'
-admin.site.site_title = 'Product Administration Site'
+# admin.site.site_header = 'Product Administration'
+# admin.site.site_title = 'Product Administration Site'
 
 # Register your models here.
 
