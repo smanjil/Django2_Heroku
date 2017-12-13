@@ -30,7 +30,7 @@ form .form-row p {
 
 label {
     font-weight: normal;
-    color: #666;
+    color: black;
     font-size: 13px;
 }
 
@@ -250,7 +250,7 @@ fieldset.monospace textarea {
 .submit-row {
     padding: 12px 14px;
     margin: 0 0 20px;
-    background: #f8f8f8;
+    background: rgb(187, 181, 181);
     border: 1px solid #eee;
     border-radius: 4px;
     text-align: right;
@@ -283,7 +283,7 @@ body.popup .submit-row {
 
 .submit-row a.deletelink {
     display: block;
-    background: #ba2121;
+    background: red;
     border-radius: 4px;
     padding: 10px 15px;
     height: 15px;

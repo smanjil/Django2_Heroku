@@ -3,6 +3,7 @@
 #changelist {
     position: relative;
     width: 100%;
+    background: rgb(211, 204, 194);
 }
 
 #changelist table {
@@ -72,7 +73,7 @@
     margin-bottom: 15px;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
-    background: #f8f8f8;
+    background: rgb(211, 204, 194);
     color: #666;
 }
 
@@ -101,10 +102,10 @@
     padding: 2px 10px;
     margin: 0;
     vertical-align: middle;
-    background: #fff;
+    background: black;
     box-shadow: 0 -15px 20px -10px rgba(0, 0, 0, 0.15) inset;
     cursor: pointer;
-    color: #333;
+    color: white;
 }
 
 #changelist #toolbar form input[type="submit"]:focus,
@@ -125,7 +126,7 @@
     right: 0;
     z-index: 1000;
     width: 240px;
-    background: #f8f8f8;
+    background: rgb(233, 205, 205);
     border-left: none;
     margin: 0;
 }
@@ -276,7 +277,7 @@
 
 #changelist .actions {
     padding: 10px;
-    background: #fff;
+    background: rgb(211, 204, 194);
     border-top: none;
     border-bottom: none;
     line-height: 24px;
@@ -296,6 +297,7 @@
     font-size: 13px;
     margin: 0 0.5em;
     display: none;
+    color: black;
 }
 
 #changelist .actions:last-child {
@@ -305,7 +307,7 @@
 #changelist .actions select {
     vertical-align: top;
     height: 24px;
-    background: none;
+    background: white;
     color: #000;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -323,20 +325,21 @@
     display: inline-block;
     vertical-align: middle;
     font-size: 13px;
+    color: black;
 }
 
 #changelist .actions .button {
     font-size: 13px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background: #fff;
+    background: black;
     box-shadow: 0 -15px 20px -10px rgba(0, 0, 0, 0.15) inset;
     cursor: pointer;
     height: 24px;
     line-height: 1;
     padding: 4px 8px;
     margin: 0;
-    color: #333;
+    color: white;
 }
 
 #changelist .actions .button:focus, #changelist .actions .button:hover {
