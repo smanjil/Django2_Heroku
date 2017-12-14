@@ -23,6 +23,10 @@ from users.forms import (
     ResetPasswordForm
 )
 
+import logging
+
+users_logger = logging.getLogger(__name__)
+
 # Create your views here.
 
 class RegisterView(CreateView):
@@ -36,6 +40,7 @@ class RegisterView(CreateView):
             messages.SUCCESS, 
             'You have successfully registered your account!'
         )
+        users_logger.info('A user just registered..')
         return reverse('users:login')
 
 class LoginView(FormView):
@@ -63,6 +68,7 @@ class LoginView(FormView):
                 messages.SUCCESS, 
                 'You have successfully logged in!'
             )
+            users_logger.info('Logged in by user {0}..' .format(username))
             return HttpResponseRedirect('/genericviews/')
         else:
             messages.add_message(
@@ -70,15 +76,18 @@ class LoginView(FormView):
                 messages.ERROR, 
                 'Oops! Login Error'
             )
+            users_logger.error('Login mismatch for user {0}..' .format(username))
             return HttpResponseRedirect('/users/login')
 
 def logout_user(request):
+    user = request.user
     messages.add_message(
         request, 
         messages.SUCCESS, 
         'You have successfully logged out!'
     )
     logout(request)
+    users_logger.info('Logged out by user {0}..' .format(user))
     return HttpResponseRedirect('/users/login')
 
 class ResetPasswordView(FormView):
@@ -103,6 +112,7 @@ class ResetPasswordView(FormView):
                 messages.SUCCESS, 
                 'You have successfully changed your password!'
             )
+            users_logger.info('Password changed by user {0}..' .format(username))
             return HttpResponseRedirect('/users/login')
         except:
             messages.add_message(
@@ -110,4 +120,5 @@ class ResetPasswordView(FormView):
                 messages.ERROR, 
                 'Oops! This user does not exist!'
             )
+            users_logger.error('Password changed was not successfull for user {0}..' .format(username))
             return HttpResponseRedirect('/users/reset')

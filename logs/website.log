@@ -1,0 +1,201 @@
+[2017-12-14 09:16:10] [INFO] [django.server] [PID:11397_140358065075968]--> "GET /genericviews/makeentry HTTP/1.1" 200 3629
+[2017-12-14 09:16:10] [INFO] [django.server] [PID:11397_140357985539840]--> "GET /static/genericviews/css/style.css HTTP/1.1" 200 585
+[2017-12-14 09:16:10] [INFO] [django.server] [PID:11397_140358065075968]--> "GET /static/genericviews/css/bootstrap.css HTTP/1.1" 200 191738
+[2017-12-14 09:16:10] [INFO] [django.server] [PID:11397_140357977147136]--> "GET /static/genericviews/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[2017-12-14 09:16:10] [INFO] [django.server] [PID:11397_140357968754432]--> "GET /static/genericviews/js/tether.min.js HTTP/1.1" 200 23384
+[2017-12-14 09:16:10] [INFO] [django.server] [PID:11397_140357960361728]--> "GET /static/genericviews/js/bootstrap.js HTTP/1.1" 200 99753
+[2017-12-14 09:16:10] [WARNING] [django.request] [PID:11397_140357960361728]--> Not Found: /favicon.ico
+[2017-12-14 09:16:10] [WARNING] [django.server] [PID:11397_140357960361728]--> "GET /favicon.ico HTTP/1.1" 404 2560
+[2017-12-14 09:16:46] [INFO] [django.server] [PID:11397_140357960361728]--> "GET /users/logout HTTP/1.1" 302 0
+[2017-12-14 09:16:46] [INFO] [django.server] [PID:11397_140357960361728]--> "GET /users/login HTTP/1.1" 200 4250
+[2017-12-14 09:16:52] [INFO] [django.server] [PID:11397_140357968754432]--> "GET /users/login HTTP/1.1" 200 4042
+[2017-12-14 09:17:00] [INFO] [django.server] [PID:11397_140357951969024]--> "POST /users/login HTTP/1.1" 302 0
+[2017-12-14 09:17:01] [INFO] [django.server] [PID:11397_140357951969024]--> "GET /genericviews/ HTTP/1.1" 200 4880
+[2017-12-14 09:17:30] [INFO] [django.server] [PID:11397_140357985539840]--> "GET /genericviews/33 HTTP/1.1" 200 3003
+[2017-12-14 09:17:42] [INFO] [django.server] [PID:11397_140357985539840]--> "GET /genericviews/72 HTTP/1.1" 200 3003
+[2017-12-14 09:17:44] [INFO] [django.server] [PID:11397_140357985539840]--> "GET /genericviews/ HTTP/1.1" 200 4673
+[2017-12-14 09:44:18] [INFO] [users.views] [PID:13246_139798394074880]--> Logged out by user AnonymousUser..
+[2017-12-14 09:44:18] [INFO] [django.server] [PID:13246_139798394074880]--> "GET /users/logout HTTP/1.1" 302 0
+[2017-12-14 09:44:18] [INFO] [django.server] [PID:13246_139798394074880]--> "GET /users/login HTTP/1.1" 200 4250
+[2017-12-14 09:44:51] [INFO] [users.views] [PID:13306_140686139844352]--> Logged in by user abc..
+[2017-12-14 09:44:51] [INFO] [django.server] [PID:13306_140686139844352]--> "POST /users/login HTTP/1.1" 302 0
+[2017-12-14 09:44:51] [INFO] [django.server] [PID:13306_140686131451648]--> "GET /genericviews/ HTTP/1.1" 200 4880
+[2017-12-14 09:45:00] [INFO] [users.views] [PID:13306_140686114666240]--> Logged out by user abc..
+[2017-12-14 09:45:00] [INFO] [django.server] [PID:13306_140686114666240]--> "GET /users/logout HTTP/1.1" 302 0
+[2017-12-14 09:45:00] [INFO] [django.server] [PID:13306_140686114666240]--> "GET /users/login HTTP/1.1" 200 4250
+[2017-12-14 09:45:09] [INFO] [django.server] [PID:13306_140686114666240]--> "GET /users/reset HTTP/1.1" 200 3939
+[2017-12-14 09:45:18] [INFO] [users.views] [PID:13306_140686114666240]--> Password changed was not successfull for user abcd..
+[2017-12-14 09:45:18] [INFO] [django.server] [PID:13306_140686114666240]--> "POST /users/reset HTTP/1.1" 302 0
+[2017-12-14 09:45:18] [INFO] [django.server] [PID:13306_140686114666240]--> "GET /users/reset HTTP/1.1" 200 4143
+[2017-12-14 09:45:28] [INFO] [django.server] [PID:13306_140686114666240]--> "GET /users/create HTTP/1.1" 200 4300
+[2017-12-14 09:45:41] [INFO] [users.views] [PID:13306_140686123058944]--> A user just registered..
+[2017-12-14 09:45:41] [INFO] [django.server] [PID:13306_140686123058944]--> "POST /users/create HTTP/1.1" 302 0
+[2017-12-14 09:45:41] [INFO] [django.server] [PID:13306_140686114666240]--> "GET /users/login HTTP/1.1" 200 4263
+[2017-12-14 09:45:51] [INFO] [users.views] [PID:13306_140686139844352]--> Logged in by user new_user..
+[2017-12-14 09:45:51] [INFO] [django.server] [PID:13306_140686139844352]--> "POST /users/login HTTP/1.1" 302 0
+[2017-12-14 09:45:51] [INFO] [django.server] [PID:13306_140686139844352]--> "GET /genericviews/ HTTP/1.1" 200 3279
+[2017-12-14 09:45:56] [INFO] [users.views] [PID:13306_140686139844352]--> Logged out by user new_user..
+[2017-12-14 09:45:56] [INFO] [django.server] [PID:13306_140686139844352]--> "GET /users/logout HTTP/1.1" 302 0
+[2017-12-14 09:45:56] [INFO] [django.server] [PID:13306_140686139844352]--> "GET /users/login HTTP/1.1" 200 4250
+[2017-12-14 09:46:08] [INFO] [users.views] [PID:13306_140686139844352]--> Logged in by user abc..
+[2017-12-14 09:46:08] [INFO] [django.server] [PID:13306_140686139844352]--> "POST /users/login HTTP/1.1" 302 0
+[2017-12-14 09:46:08] [INFO] [django.server] [PID:13306_140686095693568]--> "GET /genericviews/ HTTP/1.1" 200 4880
+[2017-12-14 09:53:29] [INFO] [users.views] [PID:13899_140121189611264]--> Logged out by user abc..
+[2017-12-14 09:53:29] [INFO] [django.server] [PID:13899_140121189611264]--> "GET /users/logout HTTP/1.1" 302 0
+[2017-12-14 09:53:29] [INFO] [django.server] [PID:13899_140121189611264]--> "GET /users/login HTTP/1.1" 200 4250
+[2017-12-14 09:53:34] [INFO] [django.server] [PID:13899_140121189611264]--> "GET /users/reset HTTP/1.1" 200 3939
+[2017-12-14 09:53:43] [ERROR] [users.views] [PID:13899_140121189611264]--> Password changed was not successfull for user asdsad..
+[2017-12-14 09:53:43] [INFO] [django.server] [PID:13899_140121189611264]--> "POST /users/reset HTTP/1.1" 302 0
+[2017-12-14 09:53:44] [INFO] [django.server] [PID:13899_140121189611264]--> "GET /users/reset HTTP/1.1" 200 4143
+[2017-12-14 09:53:49] [INFO] [django.server] [PID:13899_140121170114304]--> "GET /users/login HTTP/1.1" 200 4042
+[2017-12-14 09:53:51] [INFO] [users.views] [PID:13899_140120959219456]--> Logged in by user abc..
+[2017-12-14 09:53:51] [INFO] [django.server] [PID:13899_140120959219456]--> "POST /users/login HTTP/1.1" 302 0
+[2017-12-14 09:53:51] [INFO] [django.server] [PID:13899_140120950826752]--> "GET /genericviews/ HTTP/1.1" 200 4880
+[2017-12-14 09:55:54] [ERROR] [django.request] [PID:14282_140590756886272]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 116, in get_context_data
+    page_size = self.get_paginate_by(queryset)
+  File "/home/manshrestha/Documents/website/genericviews/views.py", line 78, in get_paginate_by
+    genericviews_logger.debug('Product listing view for user {0}...' .format(request.user))
+NameError: name 'request' is not defined
+[2017-12-14 09:55:54] [ERROR] [django.server] [PID:14282_140590756886272]--> "GET /genericviews/ HTTP/1.1" 500 99806
+[2017-12-14 09:56:15] [INFO] [django.server] [PID:14335_139786915710720]--> "GET /genericviews/ HTTP/1.1" 200 4673
+[2017-12-14 09:56:15] [INFO] [django.server] [PID:14335_139786915710720]--> "GET /static/genericviews/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[2017-12-14 09:56:15] [INFO] [django.server] [PID:14335_139786904606464]--> "GET /static/genericviews/js/tether.min.js HTTP/1.1" 304 0
+[2017-12-14 09:56:15] [INFO] [django.server] [PID:14335_139786689967872]--> "GET /static/genericviews/js/bootstrap.js HTTP/1.1" 304 0
+[2017-12-14 09:56:15] [INFO] [django.server] [PID:14335_139786689967872]--> "GET /static/genericviews/css/bootstrap.css HTTP/1.1" 304 0
+[2017-12-14 09:56:15] [INFO] [django.server] [PID:14335_139786689967872]--> "GET /static/genericviews/css/style.css HTTP/1.1" 304 0
+[2017-12-14 09:56:26] [INFO] [django.server] [PID:14335_139786689967872]--> "GET /genericviews/64 HTTP/1.1" 200 3003
+[2017-12-14 09:56:31] [INFO] [django.server] [PID:14335_139786904606464]--> "GET /genericviews/ HTTP/1.1" 200 4673
+[2017-12-14 09:58:30] [INFO] [genericviews.views] [PID:14615_140404662109952]--> Product listing for user abc...
+[2017-12-14 09:58:30] [INFO] [django.server] [PID:14615_140404662109952]--> "GET /genericviews/ HTTP/1.1" 200 4673
+[2017-12-14 09:58:30] [INFO] [django.server] [PID:14615_140404662109952]--> "GET /static/genericviews/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[2017-12-14 09:58:30] [INFO] [django.server] [PID:14615_140404651005696]--> "GET /static/genericviews/js/tether.min.js HTTP/1.1" 304 0
+[2017-12-14 09:58:30] [INFO] [django.server] [PID:14615_140404642612992]--> "GET /static/genericviews/js/bootstrap.js HTTP/1.1" 304 0
+[2017-12-14 09:58:30] [INFO] [django.server] [PID:14615_140404642612992]--> "GET /static/genericviews/css/bootstrap.css HTTP/1.1" 304 0
+[2017-12-14 09:58:30] [INFO] [django.server] [PID:14615_140404642612992]--> "GET /static/genericviews/css/style.css HTTP/1.1" 304 0
+[2017-12-14 09:58:37] [INFO] [genericviews.views] [PID:14615_140404642612992]--> Product listing for user abc...
+[2017-12-14 09:58:37] [INFO] [django.server] [PID:14615_140404642612992]--> "GET /genericviews/ HTTP/1.1" 200 4673
+[2017-12-14 09:58:42] [INFO] [django.server] [PID:14615_140404642612992]--> "GET /genericviews/64 HTTP/1.1" 200 3003
+[2017-12-14 09:58:44] [INFO] [genericviews.views] [PID:14615_140404642612992]--> Product listing for user abc...
+[2017-12-14 09:58:44] [INFO] [django.server] [PID:14615_140404642612992]--> "GET /genericviews/ HTTP/1.1" 200 4673
+[2017-12-14 10:02:51] [INFO] [genericviews.views] [PID:14927_140249109505792]--> Product listing for user abc...
+[2017-12-14 10:02:52] [INFO] [django.server] [PID:14927_140249109505792]--> "GET /genericviews/ HTTP/1.1" 200 4673
+[2017-12-14 10:02:52] [INFO] [django.server] [PID:14927_140249109505792]--> "GET /static/genericviews/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[2017-12-14 10:02:52] [INFO] [django.server] [PID:14927_140249098401536]--> "GET /static/genericviews/js/bootstrap.js HTTP/1.1" 304 0
+[2017-12-14 10:02:52] [INFO] [django.server] [PID:14927_140249109505792]--> "GET /static/genericviews/js/tether.min.js HTTP/1.1" 304 0
+[2017-12-14 10:02:52] [INFO] [django.server] [PID:14927_140249109505792]--> "GET /static/genericviews/css/bootstrap.css HTTP/1.1" 304 0
+[2017-12-14 10:02:52] [INFO] [django.server] [PID:14927_140249109505792]--> "GET /static/genericviews/css/style.css HTTP/1.1" 304 0
+[2017-12-14 10:02:56] [ERROR] [django.request] [PID:14927_140249109505792]--> Internal Server Error: /genericviews/64
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/detail.py", line 106, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/manshrestha/Documents/website/genericviews/views.py", line 94, in get_context_data
+    genericviews_logger.info('Product detail for product {0} by user {1}...' .format(self.request.user))
+IndexError: tuple index out of range
+[2017-12-14 10:02:56] [ERROR] [django.server] [PID:14927_140249109505792]--> "GET /genericviews/64 HTTP/1.1" 500 94930
+[2017-12-14 10:03:42] [INFO] [genericviews.views] [PID:15018_140596339746560]--> Product listing for user abc...
+[2017-12-14 10:03:42] [INFO] [django.server] [PID:15018_140596339746560]--> "GET /genericviews/ HTTP/1.1" 200 4673
+[2017-12-14 10:03:42] [INFO] [django.server] [PID:15018_140596339746560]--> "GET /static/genericviews/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[2017-12-14 10:03:42] [INFO] [django.server] [PID:15018_140596320249600]--> "GET /static/genericviews/js/bootstrap.js HTTP/1.1" 304 0
+[2017-12-14 10:03:42] [INFO] [django.server] [PID:15018_140596328642304]--> "GET /static/genericviews/js/tether.min.js HTTP/1.1" 304 0
+[2017-12-14 10:03:42] [INFO] [django.server] [PID:15018_140596339746560]--> "GET /static/genericviews/css/bootstrap.css HTTP/1.1" 304 0
+[2017-12-14 10:03:42] [INFO] [django.server] [PID:15018_140596339746560]--> "GET /static/genericviews/css/style.css HTTP/1.1" 304 0
+[2017-12-14 10:03:44] [ERROR] [django.request] [PID:15018_140596339746560]--> Internal Server Error: /genericviews/64
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/detail.py", line 106, in get
+    context = self.get_context_data(object=self.object)
+  File "/home/manshrestha/Documents/website/genericviews/views.py", line 94, in get_context_data
+    genericviews_logger.info('Product detail for product {0} by user {1}...' .format(self.request.user))
+IndexError: tuple index out of range
+[2017-12-14 10:03:44] [ERROR] [django.server] [PID:15018_140596339746560]--> "GET /genericviews/64 HTTP/1.1" 500 94934
+[2017-12-14 10:04:32] [INFO] [genericviews.views] [PID:15096_140611377026816]--> Product detail for product id 64 by user abc...
+[2017-12-14 10:04:32] [INFO] [django.server] [PID:15096_140611377026816]--> "GET /genericviews/64 HTTP/1.1" 200 3003
+[2017-12-14 10:04:38] [INFO] [genericviews.views] [PID:15096_140611377026816]--> Product detail for product id 32 by user abc...
+[2017-12-14 10:04:38] [INFO] [django.server] [PID:15096_140611377026816]--> "GET /genericviews/32 HTTP/1.1" 200 3003
+[2017-12-14 10:04:41] [INFO] [genericviews.views] [PID:15096_140611377026816]--> Product detail for product id 72 by user abc...
+[2017-12-14 10:04:41] [INFO] [django.server] [PID:15096_140611377026816]--> "GET /genericviews/72 HTTP/1.1" 200 3003
+[2017-12-14 10:05:46] [INFO] [genericviews.views] [PID:15217_140202818062080]--> Product listing for user abc...
+[2017-12-14 10:05:46] [INFO] [django.server] [PID:15217_140202818062080]--> "GET /genericviews/ HTTP/1.1" 200 4673
+[2017-12-14 10:05:46] [INFO] [django.server] [PID:15217_140202818062080]--> "GET /static/genericviews/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[2017-12-14 10:05:46] [INFO] [django.server] [PID:15217_140202806957824]--> "GET /static/genericviews/js/tether.min.js HTTP/1.1" 304 0
+[2017-12-14 10:05:46] [INFO] [django.server] [PID:15217_140202798565120]--> "GET /static/genericviews/js/bootstrap.js HTTP/1.1" 304 0
+[2017-12-14 10:05:47] [INFO] [django.server] [PID:15217_140202798565120]--> "GET /static/genericviews/css/bootstrap.css HTTP/1.1" 304 0
+[2017-12-14 10:05:47] [INFO] [django.server] [PID:15217_140202798565120]--> "GET /static/genericviews/css/style.css HTTP/1.1" 304 0
+[2017-12-14 10:05:48] [INFO] [django.server] [PID:15217_140202798565120]--> "GET /genericviews/edit/33 HTTP/1.1" 200 2913
+[2017-12-14 10:05:57] [INFO] [genericviews.views] [PID:15217_140202798565120]--> Product update successful for product id 33 by user abc...
+[2017-12-14 10:05:57] [INFO] [django.server] [PID:15217_140202798565120]--> "POST /genericviews/edit/33 HTTP/1.1" 302 0
+[2017-12-14 10:05:57] [INFO] [genericviews.views] [PID:15217_140202806957824]--> Product detail for product id 33 by user abc...
+[2017-12-14 10:05:57] [INFO] [django.server] [PID:15217_140202806957824]--> "GET /genericviews/33 HTTP/1.1" 200 3220
+[2017-12-14 10:06:44] [INFO] [genericviews.views] [PID:15299_139750983735040]--> Product listing for user abc...
+[2017-12-14 10:06:44] [INFO] [django.server] [PID:15299_139750983735040]--> "GET /genericviews/ HTTP/1.1" 200 4674
+[2017-12-14 10:06:44] [INFO] [django.server] [PID:15299_139750983735040]--> "GET /static/genericviews/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[2017-12-14 10:06:44] [INFO] [django.server] [PID:15299_139750964238080]--> "GET /static/genericviews/js/bootstrap.js HTTP/1.1" 304 0
+[2017-12-14 10:06:44] [INFO] [django.server] [PID:15299_139750972630784]--> "GET /static/genericviews/js/tether.min.js HTTP/1.1" 304 0
+[2017-12-14 10:06:44] [INFO] [django.server] [PID:15299_139750972630784]--> "GET /static/genericviews/css/bootstrap.css HTTP/1.1" 304 0
+[2017-12-14 10:06:44] [INFO] [django.server] [PID:15299_139750972630784]--> "GET /static/genericviews/css/style.css HTTP/1.1" 304 0
+[2017-12-14 10:06:48] [INFO] [genericviews.views] [PID:15299_139750972630784]--> Product listing for user abc...
+[2017-12-14 10:06:48] [INFO] [django.server] [PID:15299_139750972630784]--> "GET /genericviews/?page=2 HTTP/1.1" 200 4702
+[2017-12-14 10:06:49] [INFO] [genericviews.views] [PID:15299_139750972630784]--> Product listing for user abc...
+[2017-12-14 10:06:49] [INFO] [django.server] [PID:15299_139750972630784]--> "GET /genericviews/?page=3 HTTP/1.1" 200 4670
+[2017-12-14 10:06:51] [INFO] [django.server] [PID:15299_139750972630784]--> "GET /genericviews/delete/74 HTTP/1.1" 200 2709
+[2017-12-14 10:06:53] [INFO] [django.server] [PID:15299_139750972630784]--> "POST /genericviews/delete/74 HTTP/1.1" 302 0
+[2017-12-14 10:06:53] [INFO] [genericviews.views] [PID:15299_139750972630784]--> Product listing for user abc...
+[2017-12-14 10:06:53] [INFO] [django.server] [PID:15299_139750972630784]--> "GET /genericviews/ HTTP/1.1" 200 4889
+[2017-12-14 10:06:58] [INFO] [genericviews.views] [PID:15299_139750972630784]--> Product listing for user abc...
+[2017-12-14 10:06:58] [INFO] [django.server] [PID:15299_139750972630784]--> "GET /genericviews/?page=3 HTTP/1.1" 200 4423
+[2017-12-14 10:07:46] [INFO] [django.server] [PID:15393_140375526840064]--> "GET /genericviews/delete/73 HTTP/1.1" 200 2709
+[2017-12-14 10:07:47] [INFO] [genericviews.views] [PID:15393_140375526840064]--> Product 73 deleted by user abc...
+[2017-12-14 10:07:47] [INFO] [django.server] [PID:15393_140375526840064]--> "POST /genericviews/delete/73 HTTP/1.1" 302 0
+[2017-12-14 10:07:47] [INFO] [genericviews.views] [PID:15393_140375515735808]--> Product listing for user abc...
+[2017-12-14 10:07:47] [INFO] [django.server] [PID:15393_140375515735808]--> "GET /genericviews/ HTTP/1.1" 200 4803
+[2017-12-14 10:08:03] [INFO] [django.server] [PID:15393_140375515735808]--> "GET /genericviews/makeentry HTTP/1.1" 200 3629
+[2017-12-14 10:08:29] [INFO] [django.server] [PID:15463_140627123713792]--> "GET /genericviews/makeentry HTTP/1.1" 200 3629
+[2017-12-14 10:09:35] [INFO] [django.server] [PID:15463_140627123713792]--> "GET /genericviews/makeentry HTTP/1.1" 200 3629
+[2017-12-14 10:10:00] [INFO] [django.server] [PID:15615_140298181748480]--> "GET /genericviews/makeentry HTTP/1.1" 200 3629
+[2017-12-14 10:10:00] [INFO] [django.server] [PID:15615_140298181748480]--> "GET /static/genericviews/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[2017-12-14 10:10:00] [INFO] [django.server] [PID:15615_140298162251520]--> "GET /static/genericviews/js/bootstrap.js HTTP/1.1" 304 0
+[2017-12-14 10:10:00] [INFO] [django.server] [PID:15615_140298170644224]--> "GET /static/genericviews/js/tether.min.js HTTP/1.1" 304 0
+[2017-12-14 10:10:00] [INFO] [django.server] [PID:15615_140298181748480]--> "GET /static/genericviews/css/bootstrap.css HTTP/1.1" 304 0
+[2017-12-14 10:10:00] [INFO] [django.server] [PID:15615_140298162251520]--> "GET /static/genericviews/css/style.css HTTP/1.1" 304 0
+[2017-12-14 10:10:04] [INFO] [django.server] [PID:15615_140298162251520]--> "GET /genericviews/makeentry HTTP/1.1" 200 3629
+[2017-12-14 10:10:36] [INFO] [genericviews.views] [PID:15670_140621985347328]--> Product create form requested!! by user abc...
+[2017-12-14 10:10:36] [INFO] [django.server] [PID:15670_140621985347328]--> "GET /genericviews/makeentry HTTP/1.1" 200 3629

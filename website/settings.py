@@ -155,3 +155,54 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # import dj_database_url
 # db_from_env = dj_database_url.config(conn_max_age=500)
 # DATABASES['default'].update(db_from_env)
+
+
+LOGGER_LIST = ['users', 'genericviews', 'django']
+
+LOGGER_CONTENT= {
+            'handlers': ['file_handler', 'console'],
+            'level': 'DEBUG',
+            'propagate': True,
+        }
+
+# Logging details
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': True,
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse',
+        },
+        'require_debug_true': {
+            '()': 'django.utils.log.RequireDebugTrue',
+        },
+    },
+    'formatters': {
+        'server_format': {
+            'format': '[%(asctime)s] [%(levelname)s] [%(name)s] [PID:%(process)d_%(thread)d]--> %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+        'console_format': {
+            'format': '[%(asctime)s]: %(levelname)s-> %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'
+        },
+
+    },
+    'handlers': {
+        'file_handler': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs', 'website.log'),
+            'maxBytes': 1024*1024*5,            #5 MB
+            'formatter': 'server_format',
+        },
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'filters': ['require_debug_true'],
+            'formatter': 'console_format'
+        },
+
+    },
+    'loggers': { logger:LOGGER_CONTENT for logger in LOGGER_LIST}
+}

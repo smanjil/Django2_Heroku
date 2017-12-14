@@ -12,10 +12,14 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
 
-# Create your views here.
-
 from genericviews.forms import ProductForm
 from genericviews.models import Product
+
+import logging
+
+genericviews_logger = logging.getLogger(__name__)
+
+# Create your views here.
 
 class CreateProductView(LoginRequiredMixin, generic.FormView):
     model = Product
@@ -24,6 +28,7 @@ class CreateProductView(LoginRequiredMixin, generic.FormView):
 
     def get(self, request, *args, **kwargs):
         form = ProductForm()
+        genericviews_logger.info('Product create form requested!! by user {0}...' .format(request.user))
         return render(request, 'genericviews/makeentry.html', {'form': form})
 
     def post(self, request, *args, **kwargs):
@@ -46,6 +51,7 @@ class CreateProductView(LoginRequiredMixin, generic.FormView):
             messages.SUCCESS, 
             'You have successfully created a product!'
         )
+        genericviews_logger.info('New product created by user {0}...' .format(request.user))
         return HttpResponseRedirect('/genericviews/')
 
 class IndexView(LoginRequiredMixin, generic.ListView):
@@ -58,6 +64,7 @@ class IndexView(LoginRequiredMixin, generic.ListView):
     redirect_field_name = 'redirect_to'
 
     def get_queryset(self):
+        genericviews_logger.info('Product listing for user {0}...' .format(self.request.user))
         return Product.objects.all().filter(user = self.request.user).order_by('id')
 
     def get_paginate_by(self, queryset):
@@ -69,7 +76,7 @@ class IndexView(LoginRequiredMixin, generic.ListView):
         else:
             if 'paginate_by' in self.request.session:
                 del self.request.session['paginate_by']
-        
+
         return self.paginate_by
 
 class DetailsView(LoginRequiredMixin, generic.DetailView):
@@ -81,6 +88,8 @@ class DetailsView(LoginRequiredMixin, generic.DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(DetailsView, self).get_context_data(**kwargs)
+
+        genericviews_logger.info('Product detail for product id {0} by user {1}...' .format(self.kwargs['pk'], self.request.user))
 
         context['new_list'] = Product.objects.all().filter(~Q(user = self.request.user)).order_by('id')
 
@@ -100,6 +109,7 @@ class EditView(LoginRequiredMixin, generic.UpdateView):
             messages.SUCCESS, 
             'You have successfully update the product!'
         )
+        genericviews_logger.info('Product update successful for product id {0} by user {1}...' .format(self.kwargs['pk'], self.request.user))
         return reverse('genericviews:detail', kwargs = {'pk': self.kwargs['pk']})
 
 class DeleteView(LoginRequiredMixin, generic.DeleteView):
@@ -109,9 +119,11 @@ class DeleteView(LoginRequiredMixin, generic.DeleteView):
     redirect_field_name = 'redirect_to'
 
     def get_success_url(self):
+        pid = self.kwargs['pk']
         messages.add_message(
             self.request, 
             messages.SUCCESS, 
             'You have successfully deleted a product!'
         )
+        genericviews_logger.info('Product {0} deleted by user {1}...' .format(pid, self.request.user))
         return reverse('genericviews:index')
