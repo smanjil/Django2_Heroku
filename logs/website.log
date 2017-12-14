@@ -1953,3 +1953,26 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 44: 'e
 [2017-12-14 16:40:56] [INFO] [django.server] [PID:5117_140227662313216]--> "GET /genericviews/67 HTTP/1.1" 200 3758
 [2017-12-14 16:41:03] [INFO] [genericviews.views] [PID:5117_140227662313216]--> Product listing for user def...
 [2017-12-14 16:41:03] [INFO] [django.server] [PID:5117_140227662313216]--> "GET /genericviews/ HTTP/1.1" 200 4587
+[2017-12-14 16:45:37] [INFO] [genericviews.views] [PID:18544_140216772773632]--> Product listing for user def...
+[2017-12-14 16:45:37] [INFO] [django.server] [PID:18544_140216772773632]--> "GET /genericviews/ HTTP/1.1" 200 4587
+[2017-12-14 16:45:37] [INFO] [django.server] [PID:18544_140216772773632]--> "GET /static/genericviews/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[2017-12-14 16:45:37] [INFO] [django.server] [PID:18544_140216753276672]--> "GET /static/genericviews/js/bootstrap.js HTTP/1.1" 304 0
+[2017-12-14 16:45:37] [INFO] [django.server] [PID:18544_140216761669376]--> "GET /static/genericviews/js/tether.min.js HTTP/1.1" 304 0
+[2017-12-14 16:45:37] [INFO] [django.server] [PID:18544_140216761669376]--> "GET /static/genericviews/css/bootstrap.css HTTP/1.1" 304 0
+[2017-12-14 16:45:37] [INFO] [django.server] [PID:18544_140216761669376]--> "GET /static/genericviews/css/style.css HTTP/1.1" 200 629
+[2017-12-14 16:45:38] [INFO] [genericviews.views] [PID:18544_140216761669376]--> Product detail for product id 66 by user def...
+[2017-12-14 16:45:38] [INFO] [django.server] [PID:18544_140216761669376]--> "GET /genericviews/66 HTTP/1.1" 200 3533
+[2017-12-14 16:46:07] [INFO] [genericviews.views] [PID:18544_140216761669376]--> Product detail for product id 64 by user def...
+[2017-12-14 16:46:07] [INFO] [django.server] [PID:18544_140216761669376]--> "GET /genericviews/64 HTTP/1.1" 200 3534
+[2017-12-14 16:46:07] [INFO] [django.server] [PID:18544_140216761669376]--> "GET /static/genericviews/css/style.css HTTP/1.1" 304 0
+[2017-12-14 16:46:08] [INFO] [genericviews.views] [PID:18544_140216772773632]--> Product detail for product id 65 by user def...
+[2017-12-14 16:46:08] [INFO] [django.server] [PID:18544_140216772773632]--> "GET /genericviews/65 HTTP/1.1" 200 3535
+[2017-12-14 16:46:10] [INFO] [genericviews.views] [PID:18544_140216761669376]--> Product detail for product id 67 by user def...
+[2017-12-14 16:46:10] [INFO] [django.server] [PID:18544_140216761669376]--> "GET /genericviews/67 HTTP/1.1" 200 3534
+[2017-12-14 16:48:10] [INFO] [genericviews.views] [PID:18717_139983343011584]--> Product detail for product id 67 by user def...
+[2017-12-14 16:48:10] [INFO] [django.server] [PID:18717_139983343011584]--> "GET /genericviews/67 HTTP/1.1" 200 3534
+[2017-12-14 16:48:10] [INFO] [django.server] [PID:18717_139983343011584]--> "GET /static/genericviews/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[2017-12-14 16:48:10] [INFO] [django.server] [PID:18717_139983331907328]--> "GET /static/genericviews/js/tether.min.js HTTP/1.1" 304 0
+[2017-12-14 16:48:10] [INFO] [django.server] [PID:18717_139983117612800]--> "GET /static/genericviews/js/bootstrap.js HTTP/1.1" 304 0
+[2017-12-14 16:48:10] [INFO] [django.server] [PID:18717_139983343011584]--> "GET /static/genericviews/css/bootstrap.css HTTP/1.1" 304 0
+[2017-12-14 16:48:10] [INFO] [django.server] [PID:18717_139983343011584]--> "GET /static/genericviews/css/style.css HTTP/1.1" 304 0
