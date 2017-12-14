@@ -48,7 +48,7 @@
 				<div class="list-group">
 					{% for items in new_list %}
 						<a href="{% url 'genericviews:detail' items.id %}" class="list-group-item list-group-item-action" style="background-color: black; color: white;">
-							{{ items.title }} <span style="margin-left: 180px;"> by <i>{{ items.user }}</i></span>
+							{{ items.title }}
 						</a>
 					{% endfor %}
 				</div>
