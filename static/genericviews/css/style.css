@@ -33,3 +33,7 @@ body{
 a {
   color: red;
 }
+
+.col-md-3 {
+  background-color: #041629;
+}

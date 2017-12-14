@@ -18,7 +18,7 @@
 		</ol>
 	{% endblock %}
 
-	<div class="container">
+	<div class="container-fluid">
 		{% if messages %}
 			<div class="alert alert-success" role="alert">
 				<ul class="messages">
@@ -30,25 +30,32 @@
 				</ul>
 			</div>
 		{% endif%}
-	
-		<h1 align="center">{{ product.title }}</h1>
-		<h3 align="center">{{ product.desc }}</h1>
 
-		<h1 align="center">Similar Watches!</h1>
+		<div class="row">
+			<div class="col-md-9">
+				<h2><center>{{ product.title }}</center></h2> <br>
 
-		<table class="table table-sm">			
-			<tr>
-				<th>Record ID</th>
-				<th>Titles</th>
-			</tr>
-			{% for items in new_list %}
-				<tr style="height: 20px;">
-					<td>{{ items.id }}</td>
-					<td><a href = "{% url 'genericviews:detail' items.id %}">{{ items.title }}</a></td>
-				</tr>
-			{% endfor %}
-		</table>
+				<img src="https://www.w3schools.com/css/trolltunga.jpg" alt="..." class="img-fluid">
 
-		<a href="{% url 'genericviews:index' %}">Back to watch listings!</a>
+				<p class="lead">{{ product.desc }}</p>
+
+				<br><p>Posted by: {{ product.user }}</p>
+			</div>
+
+			<div class="col-md-3">
+				<h2 style="margin-top: 5px;"><center>Similar Products</center></h2> <br>
+
+				<div class="list-group">
+					{% for items in new_list %}
+						<a href="{% url 'genericviews:detail' items.id %}" class="list-group-item list-group-item-action" style="background-color: black; color: white;">
+							{{ items.title }} <span style="margin-left: 180px;"> by <i>{{ items.user }}</i></span>
+						</a>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<a href="{% url 'genericviews:index' %}" class="btn btn-primary">Back to watch listings!</a>
 	</div>
 {% endblock %}
