@@ -127,3 +127,25 @@ class DeleteView(LoginRequiredMixin, generic.DeleteView):
         )
         genericviews_logger.info('Product {0} deleted by user {1}...' .format(pid, self.request.user))
         return reverse('genericviews:index')
+
+class MultipleDeleteView(LoginRequiredMixin, generic.FormView):
+    model = Product
+
+    login_url = '/users/login'
+    redirect_field_name = 'redirect_to'
+
+    def post(self, request, *args, **kwargs):
+        # get list of checkbox values
+        product_ids = list(map(lambda id: int(id), request.POST.getlist('ids')))
+
+        # delete rows from Product model having those ids
+        prod_obj = Product.objects.filter(pk__in = product_ids).delete()
+        
+        # redirect to index page
+        messages.add_message(
+            request, 
+            messages.SUCCESS, 
+            'You have successfully deleted {0} product!' .format(len(product_ids))
+        )
+        genericviews_logger.info('Products deleted by user {0}...' .format(request.user))
+        return HttpResponseRedirect('/genericviews/')

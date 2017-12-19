@@ -92,23 +92,39 @@
 		<div class="row">
 			<table class="table table-sm">			
 				<tr>
+					<th></th>
 					<th>Record ID</th>
 					<th>Titles</th>
 					<th>Actions</th>
 				</tr>
-				{% for product in product_list %}
-					<tr style="height: 20px;">
-						<td>{{ product.id }}</td>
-						<td><a href = "{% url 'genericviews:detail' product.id %}">{{ product.title }}</a></td>
-						<td>
-							<a href="{% url 'genericviews:edit' product.id %}">Edit</a> | 
-							<a href="{% url 'genericviews:delete' product.id %}">Delete</a>
-						</td>
-					</tr>
-				{% endfor %}
+				<form action="{% url 'genericviews:multiple_delete' %}" method="POST">
+					{% csrf_token %}
+					{% for product in product_list %}
+						<tr style="height: 20px;">
+							<td><input type="checkbox" value={{ product.id }} name="ids"></td>
+							<td>{{ product.id }}</td>
+							<td><a href = "{% url 'genericviews:detail' product.id %}">{{ product.title }}</a></td>
+							<td>
+								<a href="{% url 'genericviews:edit' product.id %}">Edit</a> | 
+								<a href="{% url 'genericviews:delete' product.id %}">Delete</a>
+							</td>
+						</tr>
+					{% endfor %}
+					<input type="submit" value="Delete Selected">
+				</form>
 			</table>
 		{% else %}
 			<h3>No product found</h3>
+			<div class="row">
+				<div class="col"></div>
+				<div class="col">
+					<a href="{% url 'genericviews:makeentry' %}" style="color:inherit">
+						<button type="button" class="btn btn-outline-success and-all-other-classes"> 
+							Create New Product
+						</button>
+					</a>
+				</div>					
+			</div>
 		{% endif %}
 		</div>
 	</div>		
