@@ -35,7 +35,11 @@
 			<div class="col-md-9">
 				<h2><center>{{ product.title }}</center></h2> <br>
 
-				<img src="https://www.w3schools.com/css/trolltunga.jpg" alt="..." class="img-fluid">
+				{% if product.image %}
+					<img src="{{ product.image.url }}" alt="..." class="img-fluid">
+				{% else %}
+					<center>Image not found!</center>
+				{% endif %}
 
 				<p class="lead">{{ product.desc }}</p>
 

@@ -37,3 +37,7 @@ a {
 .col-md-3 {
   background-color: #041629;
 }
+
+textarea {
+  overflow: inherit;
+}

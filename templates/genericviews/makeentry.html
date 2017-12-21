@@ -21,15 +21,19 @@
 		<div class="Absolute-Center is-Responsive">
 			<div id="logo-container">Create New Product</div>
                 <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <form action="{% url 'genericviews:makeentry' %}" method="POST">
+                    <form action="{% url 'genericviews:makeentry' %}" method="POST" enctype="multipart/form-data">
 						{% csrf_token %}
                         <div class="form-group input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <span class="input-group-addon"><i class="fa fa-header" aria-hidden="true"></i></span>
                             {{ form.title }}         
                         </div>
                         <div class="form-group input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <span class="input-group-addon"><i class="fa fa-file-text-o" aria-hidden="true"></i></span>
                             {{ form.desc }}
+                        </div>
+                        <div class="form-group input-group">
+                            <span class="input-group-addon"><i class="fa fa-upload" aria-hidden="true"></i></span>
+                            {{ form.image }}
                         </div>
                         <div class="form-group">
                             <input class="form-control" type="submit" value="Create"></input>

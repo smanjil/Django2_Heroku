@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '8th0_@$0%=(2-b2(2b*aq2+!)8erh+fidi@3l=)a88ce$2g@dn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
@@ -80,28 +80,28 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 # local
-# DATABASES = {
-#         'default': {
-#                     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#                     'NAME': 'django2',
-#                     'USER': 'postgres',
-#                     'PASSWORD': '12345',
-#                     'HOST': '127.0.0.1',
-#                     'PORT': '5432',
-#                 }
-# }
-
-# heroku
 DATABASES = {
         'default': {
                     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-                    'NAME': 'd846bag7b0airf',
-                    'USER': 'fdwipwfwwaijwt',
-                    'PASSWORD': 'ed5aeb70d59d4476cdc17f1ee82f3630bd1fde1a3f58eb75206f85dc8dfff960',
-                    'HOST': 'ec2-54-243-211-197.compute-1.amazonaws.com',
+                    'NAME': 'django2',
+                    'USER': 'postgres',
+                    'PASSWORD': '12345',
+                    'HOST': '127.0.0.1',
                     'PORT': '5432',
                 }
 }
+
+# heroku
+# DATABASES = {
+#         'default': {
+#                     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#                     'NAME': 'd846bag7b0airf',
+#                     'USER': 'fdwipwfwwaijwt',
+#                     'PASSWORD': 'ed5aeb70d59d4476cdc17f1ee82f3630bd1fde1a3f58eb75206f85dc8dfff960',
+#                     'HOST': 'ec2-54-243-211-197.compute-1.amazonaws.com',
+#                     'PORT': '5432',
+#                 }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
