@@ -15,6 +15,7 @@ from django.db.models import Q
 
 from genericviews.forms import ProductForm
 from genericviews.models import Product
+from genericviews.tasks import clean_media_dir
 
 import logging
 
@@ -46,6 +47,9 @@ class CreateProductView(LoginRequiredMixin, generic.FormView):
             desc = desc,
             image=image
         )
+
+        # run image filtering celery task
+        clean_media_dir.delay()
 
         form = ProductForm()
 
@@ -107,6 +111,9 @@ class EditView(LoginRequiredMixin, generic.UpdateView):
     redirect_field_name = 'redirect_to'
 
     def get_success_url(self):
+        # run image filtering celery task
+        clean_media_dir.delay()
+        
         messages.add_message(
             self.request, 
             messages.SUCCESS, 
