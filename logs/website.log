@@ -3974,3 +3974,314 @@ ValueError: The 'image' attribute has no file associated with it.
 [2017-12-21 08:40:27] [INFO] [genericviews.views] [PID:20539_140014074193664]--> Product listing for user abc...
 [2017-12-21 08:40:28] [INFO] [genericviews.views] [PID:20539_140014074193664]--> Product detail for product id 83 by user abc...
 [2017-12-21 08:40:29] [INFO] [genericviews.views] [PID:20539_140014074193664]--> Product detail for product id 32 by user abc...
+[2017-12-21 08:42:32] [INFO] [genericviews.views] [PID:20539_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:42:33] [INFO] [genericviews.views] [PID:20539_140014074193664]--> Product detail for product id 83 by user abc...
+[2017-12-21 08:47:25] [ERROR] [django.request] [PID:21941_140014074193664]--> Internal Server Error: /genericviews/83
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/detail.py", line 105, in get
+    self.object = self.get_object()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/detail.py", line 51, in get_object
+    obj = queryset.get()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/query.py", line 1179, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/query.py", line 64, in __iter__
+    obj = model_cls.from_db(db, init_list, row[model_fields_start:model_fields_end])
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/base.py", line 507, in from_db
+    new = cls(*values)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/base.py", line 497, in __init__
+    post_init.send(sender=cls, instance=self)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/dispatch/dispatcher.py", line 178, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/dispatch/dispatcher.py", line 178, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/fields/files.py", line 432, in update_dimension_fields
+    (self.width_field and not getattr(instance, self.width_field)) or
+TypeError: getattr(): attribute name must be string
+[2017-12-21 08:48:15] [ERROR] [django.request] [PID:21939_140014074193664]--> Internal Server Error: /genericviews/83
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/detail.py", line 105, in get
+    self.object = self.get_object()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/detail.py", line 51, in get_object
+    obj = queryset.get()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/query.py", line 397, in get
+    num = len(clone)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/query.py", line 254, in __len__
+    self._fetch_all()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/query.py", line 1179, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/query.py", line 64, in __iter__
+    obj = model_cls.from_db(db, init_list, row[model_fields_start:model_fields_end])
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/base.py", line 507, in from_db
+    new = cls(*values)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/base.py", line 497, in __init__
+    post_init.send(sender=cls, instance=self)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/dispatch/dispatcher.py", line 178, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/dispatch/dispatcher.py", line 178, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/db/models/fields/files.py", line 432, in update_dimension_fields
+    (self.width_field and not getattr(instance, self.width_field)) or
+TypeError: getattr(): attribute name must be string
+[2017-12-21 08:48:48] [INFO] [genericviews.views] [PID:22076_140014074193664]--> Product detail for product id 83 by user abc...
+[2017-12-21 08:48:50] [WARNING] [django.request] [PID:22091_140014074193664]--> Not Found: /media/panda_1DbF2ty.jpg
+[2017-12-21 08:48:58] [INFO] [genericviews.views] [PID:22076_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:49:00] [INFO] [genericviews.views] [PID:22076_140014074193664]--> Products deleted by user abc...
+[2017-12-21 08:49:00] [INFO] [genericviews.views] [PID:22091_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:49:02] [INFO] [genericviews.views] [PID:22091_140014074193664]--> Product create form requested!! by user abc...
+[2017-12-21 08:49:14] [INFO] [genericviews.views] [PID:22091_140014074193664]--> New product created by user abc...
+[2017-12-21 08:49:14] [INFO] [genericviews.views] [PID:22076_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:49:17] [INFO] [genericviews.views] [PID:22076_140014074193664]--> Product detail for product id 84 by user abc...
+[2017-12-21 08:50:10] [INFO] [genericviews.views] [PID:22285_140014074193664]--> Products deleted by user abc...
+[2017-12-21 08:50:10] [INFO] [genericviews.views] [PID:22287_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:50:18] [INFO] [genericviews.views] [PID:22287_140014074193664]--> Product create form requested!! by user abc...
+[2017-12-21 08:50:26] [INFO] [genericviews.views] [PID:22287_140014074193664]--> New product created by user abc...
+[2017-12-21 08:50:26] [INFO] [genericviews.views] [PID:22285_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:50:28] [INFO] [genericviews.views] [PID:22285_140014074193664]--> Product detail for product id 85 by user abc...
+[2017-12-21 08:50:44] [INFO] [genericviews.views] [PID:22287_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:50:46] [INFO] [genericviews.views] [PID:22285_140014074193664]--> Product detail for product id 85 by user abc...
+[2017-12-21 08:50:53] [INFO] [genericviews.views] [PID:22285_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:51:39] [INFO] [genericviews.views] [PID:22287_140014074193664]--> Product detail for product id 85 by user abc...
+[2017-12-21 08:51:40] [WARNING] [django.request] [PID:22285_140014074193664]--> Not Found: /media/panda.jpg
+[2017-12-21 08:51:53] [INFO] [genericviews.views] [PID:22287_140014074193664]--> Product detail for product id 85 by user abc...
+[2017-12-21 08:51:54] [WARNING] [django.request] [PID:22287_140014074193664]--> Not Found: /media/panda.jpg
+[2017-12-21 08:52:07] [INFO] [genericviews.views] [PID:22285_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:56:55] [INFO] [genericviews.views] [PID:22552_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:57:13] [INFO] [genericviews.views] [PID:22540_140014074193664]--> Product create form requested!! by user abc...
+[2017-12-21 08:57:24] [INFO] [genericviews.views] [PID:22540_140014074193664]--> New product created by user abc...
+[2017-12-21 08:57:24] [INFO] [genericviews.views] [PID:22552_140014074193664]--> Product listing for user abc...
+[2017-12-21 08:57:26] [INFO] [genericviews.views] [PID:22540_140014074193664]--> Product detail for product id 86 by user abc...
+[2017-12-21 08:59:26] [INFO] [genericviews.views] [PID:22552_140014074193664]--> Product detail for product id 32 by user abc...
+[2017-12-21 08:59:29] [INFO] [genericviews.views] [PID:22552_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:00:34] [INFO] [genericviews.views] [PID:23296_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:00:59] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:01:01] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product detail for product id 86 by user abc...
+[2017-12-21 09:01:42] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:03:37] [WARNING] [django.request] [PID:23298_140014074193664]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-21 09:05:11] [WARNING] [django.request] [PID:23298_140014074193664]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-21 09:05:27] [WARNING] [django.request] [PID:23296_140014074193664]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-21 09:06:27] [WARNING] [django.request] [PID:23298_140014074193664]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-21 09:08:29] [ERROR] [django.request] [PID:23296_140014074193664]--> Internal Server Error: /genericviews/makeentry
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'image'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/Documents/website/genericviews/views.py", line 46, in post
+    image = request.FILES['image']
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'image'
+[2017-12-21 09:08:43] [INFO] [genericviews.views] [PID:23296_140014074193664]--> New product created by user abc...
+[2017-12-21 09:08:43] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:09:28] [INFO] [genericviews.views] [PID:23296_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:09:37] [INFO] [genericviews.views] [PID:23296_140014074193664]--> New product created by user abc...
+[2017-12-21 09:09:37] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:09:52] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product 88 deleted by user abc...
+[2017-12-21 09:09:52] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:11:08] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:11:10] [ERROR] [django.request] [PID:23298_140014074193664]--> Internal Server Error: /genericviews/edit/86
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit' with no arguments not found. 1 pattern(s) tried: ['genericviews\\/edit\\/(?P<pk>[0-9]+)$']
+[2017-12-21 09:11:15] [ERROR] [django.request] [PID:23298_140014074193664]--> Internal Server Error: /genericviews/edit/86
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit' with no arguments not found. 1 pattern(s) tried: ['genericviews\\/edit\\/(?P<pk>[0-9]+)$']
+[2017-12-21 09:11:19] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:11:22] [ERROR] [django.request] [PID:23298_140014074193664]--> Internal Server Error: /genericviews/edit/86
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 158, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 156, in _get_response
+    response = response.render()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/response.py", line 106, in render
+    self.content = self.rendered_content
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/response.py", line 83, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/loader_tags.py", line 67, in render
+    result = block.nodelist.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/template/defaulttags.py", line 447, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/urls/base.py", line 88, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/urls/resolvers.py", line 632, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'edit' with no arguments not found. 1 pattern(s) tried: ['genericviews\\/edit\\/(?P<pk>[0-9]+)$']
+[2017-12-21 09:11:45] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:11:53] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product update successful for product id 86 by user abc...
+[2017-12-21 09:11:53] [INFO] [genericviews.views] [PID:23296_140014074193664]--> Product detail for product id 86 by user abc...
+[2017-12-21 09:11:58] [INFO] [genericviews.views] [PID:23296_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:12:02] [INFO] [genericviews.views] [PID:23296_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:12:14] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:12:21] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:12:23] [INFO] [genericviews.views] [PID:23296_140014074193664]--> Product detail for product id 86 by user abc...
+[2017-12-21 09:12:23] [WARNING] [django.request] [PID:23298_140014074193664]--> Not Found: /media/13517666_1082776051760892_7886421343770261075_o.jpg
+[2017-12-21 09:12:28] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:12:38] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product update successful for product id 86 by user abc...
+[2017-12-21 09:12:38] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product detail for product id 86 by user abc...
+[2017-12-21 09:12:41] [INFO] [genericviews.views] [PID:23298_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:13:05] [INFO] [genericviews.views] [PID:23296_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:14:48] [INFO] [genericviews.views] [PID:24747_140014074193664]--> Product detail for product id 86 by user abc...
+[2017-12-21 09:14:49] [WARNING] [django.request] [PID:24748_140014074193664]--> Not Found: /media/panda_4MLII8t.jpg
+[2017-12-21 09:14:53] [INFO] [genericviews.views] [PID:24747_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:15:04] [INFO] [genericviews.views] [PID:24748_140014074193664]--> Product update successful for product id 86 by user abc...
+[2017-12-21 09:15:04] [INFO] [genericviews.views] [PID:24748_140014074193664]--> Product detail for product id 86 by user abc...
+[2017-12-21 09:15:10] [INFO] [genericviews.views] [PID:24748_140014074193664]--> Product listing for user abc...
+[2017-12-21 09:20:20] [INFO] [users.views] [PID:24747_140014074193664]--> Logged out by user abc..
+[2017-12-21 09:20:28] [INFO] [users.views] [PID:24748_140014074193664]--> Logged in by user def..
+[2017-12-21 09:20:28] [INFO] [genericviews.views] [PID:24748_140014074193664]--> Product listing for user def...
+[2017-12-21 09:20:30] [INFO] [genericviews.views] [PID:24748_140014074193664]--> Product detail for product id 32 by user def...
+[2017-12-21 09:20:31] [INFO] [genericviews.views] [PID:24748_140014074193664]--> Product listing for user def...
+[2017-12-21 09:20:45] [INFO] [genericviews.views] [PID:24748_140014074193664]--> Product update successful for product id 32 by user def...
+[2017-12-21 09:20:45] [INFO] [genericviews.views] [PID:24747_140014074193664]--> Product detail for product id 32 by user def...
+[2017-12-21 09:22:14] [INFO] [genericviews.views] [PID:25460_140014074193664]--> Product listing for user def...
+[2017-12-21 09:22:24] [INFO] [genericviews.views] [PID:25462_140014074193664]--> Product update successful for product id 32 by user def...
+[2017-12-21 09:22:25] [INFO] [genericviews.views] [PID:25460_140014074193664]--> Product detail for product id 32 by user def...
+[2017-12-21 09:22:49] [INFO] [genericviews.views] [PID:25460_140014074193664]--> Product listing for user def...
+[2017-12-21 09:22:53] [INFO] [genericviews.views] [PID:25462_140014074193664]--> Product listing for user def...
+[2017-12-21 09:26:22] [INFO] [users.views] [PID:25460_140014074193664]--> Logged out by user def..

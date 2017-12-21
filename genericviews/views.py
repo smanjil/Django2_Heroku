@@ -27,11 +27,6 @@ class CreateProductView(LoginRequiredMixin, generic.FormView):
     form_class = ProductForm
     template_name = 'genericviews/makeentry.html'
 
-    def handle_uploaded_file(self, f):
-        with open(settings.MEDIA_ROOT + '/' + f.name, 'wb+') as destination:
-            for chunk in f.chunks():
-                destination.write(chunk)
-
     def get(self, request, *args, **kwargs):
         form = ProductForm()
         genericviews_logger.info('Product create form requested!! by user {0}...' .format(request.user))
@@ -43,10 +38,7 @@ class CreateProductView(LoginRequiredMixin, generic.FormView):
 
         title = form.data['title']
         desc = form.data['desc']
-        image = request.FILES['image']
-
-        # save image to disk
-        self.handle_uploaded_file(image)        
+        image = request.FILES['image']    
 
         Product.objects.create(
             user = request.user, 
@@ -108,7 +100,7 @@ class DetailsView(LoginRequiredMixin, generic.DetailView):
 
 class EditView(LoginRequiredMixin, generic.UpdateView):
     model = Product
-    fields = ['title', 'desc']
+    fields = ['title', 'desc', 'image']
     template_name_suffix = '_update_form'
 
     login_url = '/users/login'

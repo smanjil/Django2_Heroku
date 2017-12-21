@@ -13,7 +13,7 @@ class Product(models.Model):
         )
     title = models.CharField(max_length = 100)
     desc = models.CharField(max_length = 300)
-    image = models.ImageField(null = True, blank = True)
+    image = models.ImageField(null = True, blank = True, upload_to='.')
 
     def __str__(self):
         return self.title
