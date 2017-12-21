@@ -12,6 +12,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             
             <link rel="stylesheet" type="text/css" href="{% static 'genericviews/css/bootstrap.css' %}" />
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="{% static 'genericviews/css/style.css' %}" />
             <script src="{% static 'genericviews/js/jquery-3.2.1.min.js' %}"></script>
             <script src="{% static 'genericviews/js/tether.min.js' %}"></script>
@@ -32,32 +33,31 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         {% if not request.user.is_authenticated %}
+                            <i class="fa fa-home" aria-hidden="true"></i>
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'base' %}">Home</a>
                             </li>
                         {% else %}
+                            <i class="fa fa-home" aria-hidden="true"></i>
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'genericviews:index' %}">Home</a>
                             </li>
                         {% endif %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
                     </ul>
                     {% if not request.user.is_authenticated %}
                         <ul class="nav navbar-nav ml-auto">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
                             <li class="nav-item">
                                 <a href="{% url 'users:register' %}">Register</a>
                             </li> &nbsp; | &nbsp;
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
                             <li class="nav-item">
                                 <a href="{% url 'users:login' %}">Login</a>
                             </li>
                         </ul>
                     {% else %}
                         <ul class="nav navbar-nav ml-auto">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
                             <li class="nav-item">
                                 <a href="{% url 'users:logout' %}">Logout</a>
                             </li>

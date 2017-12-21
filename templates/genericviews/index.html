@@ -105,7 +105,9 @@
 							<td>{{ product.id }}</td>
 							<td><a href = "{% url 'genericviews:detail' product.id %}">{{ product.title }}</a></td>
 							<td>
+								<i class="fa fa-pencil" aria-hidden="true"></i>
 								<a href="{% url 'genericviews:edit' product.id %}">Edit</a> | 
+								<i class="fa fa-trash" aria-hidden="true"></i>
 								<a href="{% url 'genericviews:delete' product.id %}">Delete</a>
 							</td>
 						</tr>
