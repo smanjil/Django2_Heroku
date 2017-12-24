@@ -64,8 +64,27 @@ class IndexView(LoginRequiredMixin, generic.ListView):
     redirect_field_name = 'redirect_to'
 
     def get_queryset(self):
-        genericviews_logger.info('Product listing for user {0}...' .format(self.request.user))
-        return Product.objects.all().filter(user = self.request.user).order_by('id')
+        empty_values_list = list(filter(lambda x: x == '', self.request.GET.values()))
+        total_len = len(self.request.GET.keys()) - 1
+        if len(empty_values_list) < total_len:
+            # get datas from filter form
+            genericviews_logger.info('Getting filter data for user {0}...' .format(self.request.user))
+
+            record_id = self.request.GET.get('record-id', None)
+            product_title = self.request.GET.get('product-title', None)
+
+            if record_id and product_title:
+                genericviews_logger.info('Product listing according to record id and product title for user {0}...' .format(self.request.user))
+                return Product.objects.all().filter(user = self.request.user).filter(id = record_id).filter(title = product_title).order_by('id')
+            elif record_id:
+                genericviews_logger.info('Product listing according to record id for user {0}...' .format(self.request.user))
+                return Product.objects.all().filter(user = self.request.user).filter(id = record_id).order_by('id')
+            elif product_title:
+                genericviews_logger.info('Product listing according to product title for user {0}...' .format(self.request.user))   
+                return Product.objects.all().filter(user = self.request.user).filter(title = product_title).order_by('id')
+        else:
+            genericviews_logger.info('Product listing for user {0}...' .format(self.request.user))
+            return Product.objects.all().filter(user = self.request.user).order_by('id')
 
     def get_paginate_by(self, queryset):
         if 'paginate_by' in self.request.GET:
@@ -149,3 +168,6 @@ class MultipleDeleteView(LoginRequiredMixin, generic.FormView):
         )
         genericviews_logger.info('Products deleted by user {0}...' .format(request.user))
         return HttpResponseRedirect('/genericviews/')
+
+class FilterView(LoginRequiredMixin, generic.FormView):
+    pass

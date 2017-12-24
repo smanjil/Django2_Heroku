@@ -112,8 +112,44 @@
 							</td>
 						</tr>
 					{% endfor %}
-					<input type="submit" value="Delete Selected">
+					<input type="submit" value="Delete Selected" class="btn btn-outline-danger"> &nbsp; &nbsp;
 				</form>
+
+				<button type="button" class="btn btn-outline-success and-all-other-classes" data-toggle="modal" data-target="#filterModal">
+					<i class="fa fa-filter" aria-hidden="true"></i>Filter
+				</button>
+
+				<div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="filterModalLabel" style="color: black;">New message</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form action="{% url 'genericviews:index' %}" method="GET" id = 'filter-form'>
+									{% csrf_token %}
+									<div class="form-group">
+										<label for="record-id" class="form-control-label" style="color: black;">Record ID:</label>
+										<input type="text" class="form-control" name="record-id" id="rec-id">
+									</div>
+									<div class="form-group">
+										<label for="product-title" class="form-control-label" style="color: black;">Title:</label>
+										<input type="text" class="form-control" name="product-title" id="prod-title">
+									</div>
+									<div class="modal-footer">
+										<p id="err-msg" style="color:red;">Fill at least one field!</p>
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary" onclick="validate()">Filter</button>
+										<!-- <input type="submit" class="btn btn-primary" value="Filter"> -->
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>	
 			</table>
 		{% else %}
 			<h3>No product found</h3>
@@ -135,7 +171,22 @@
 {% block javascript %}
 	<script type="text/javascript">
 		$(function () {
+			$('#err-msg').hide();
 			$('#paginate_options').val({{ page_obj.paginator.per_page }});
 		});
+
+		function validate() {
+			var record_id = $('#rec-id').val();
+			var title = $('#prod-title').val();
+
+			console.log(record_id, title);
+
+			if (!record_id & !title){
+				$('#err-msg').show();
+				return false;
+			} else {
+				$('#filter-form').submit();
+			}
+		}
 	</script>
 {% endblock %}

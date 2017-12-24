@@ -2456,3 +2456,890 @@ ValueError: The view genericviews.views.MultipleDeleteView didn't return an Http
 [2017-12-21 09:56:52] [INFO] [genericviews.views] [PID:28954_139783971481344]--> Product listing for user def...
 [2017-12-21 09:56:54] [INFO] [genericviews.views] [PID:28952_139783971481344]--> Product detail for product id 32 by user def...
 [2017-12-21 09:57:00] [INFO] [genericviews.views] [PID:28952_139783971481344]--> Product listing for user def...
+[2017-12-22 09:40:59] [ERROR] [users.views] [PID:5788_139954613061376]--> Login mismatch for user abc..
+[2017-12-22 09:41:19] [INFO] [users.views] [PID:5988_139954613061376]--> Logged in by user abc..
+[2017-12-22 09:41:20] [INFO] [genericviews.views] [PID:5990_139954613061376]--> Product listing for user abc...
+[2017-12-22 09:47:16] [INFO] [genericviews.views] [PID:5988_139954613061376]--> Product listing for user abc...
+[2017-12-23 08:30:23] [INFO] [genericviews.views] [PID:1266_139954613061376]--> Product listing for user abc...
+[2017-12-23 08:30:33] [INFO] [genericviews.views] [PID:1264_139954613061376]--> Product listing for user abc...
+[2017-12-24 08:36:35] [INFO] [genericviews.views] [PID:20652_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:36:37] [WARNING] [django.request] [PID:20654_140573634459392]--> Not Found: /favicon.ico
+[2017-12-24 08:37:11] [INFO] [genericviews.views] [PID:20654_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:37:27] [INFO] [genericviews.views] [PID:20654_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:37:28] [INFO] [genericviews.views] [PID:20652_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:37:29] [INFO] [genericviews.views] [PID:20652_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:38:05] [INFO] [genericviews.views] [PID:20654_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:38:13] [INFO] [genericviews.views] [PID:20654_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:38:14] [INFO] [genericviews.views] [PID:20652_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:38:14] [INFO] [genericviews.views] [PID:20654_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:38:15] [INFO] [genericviews.views] [PID:20654_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:38:16] [INFO] [genericviews.views] [PID:20652_140573634459392]--> Product listing for user abc...
+[2017-12-24 08:38:26] [INFO] [genericviews.views] [PID:20998_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:39:33] [INFO] [genericviews.views] [PID:20996_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:39:49] [INFO] [genericviews.views] [PID:20996_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:40:09] [INFO] [genericviews.views] [PID:20996_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:40:10] [INFO] [genericviews.views] [PID:20996_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:40:11] [INFO] [genericviews.views] [PID:20998_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:40:12] [INFO] [genericviews.views] [PID:20996_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:40:13] [INFO] [genericviews.views] [PID:20998_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:40:13] [INFO] [genericviews.views] [PID:20998_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:40:14] [INFO] [genericviews.views] [PID:20996_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:40:16] [INFO] [genericviews.views] [PID:20996_140463000348416]--> Product listing for user abc...
+[2017-12-24 08:40:35] [INFO] [genericviews.views] [PID:21223_140042929358592]--> Product listing for user abc...
+[2017-12-24 08:42:02] [INFO] [genericviews.views] [PID:21223_140042929358592]--> Product listing for user abc...
+[2017-12-24 08:42:06] [INFO] [genericviews.views] [PID:21223_140042929358592]--> Products deleted by user abc...
+[2017-12-24 08:42:06] [INFO] [genericviews.views] [PID:21223_140042929358592]--> Product listing for user abc...
+[2017-12-24 08:42:24] [INFO] [genericviews.views] [PID:21223_140042929358592]--> Product listing for user abc...
+[2017-12-24 08:42:42] [INFO] [genericviews.views] [PID:21398_140440497313536]--> Product listing for user abc...
+[2017-12-24 08:43:12] [INFO] [genericviews.views] [PID:21398_140440497313536]--> Product listing for user abc...
+[2017-12-24 08:43:28] [INFO] [genericviews.views] [PID:21513_140036143408896]--> Product listing for user abc...
+[2017-12-24 08:43:41] [INFO] [genericviews.views] [PID:21515_140036143408896]--> Product listing for user abc...
+[2017-12-24 08:43:45] [INFO] [genericviews.views] [PID:21515_140036143408896]--> Products deleted by user abc...
+[2017-12-24 08:43:45] [INFO] [genericviews.views] [PID:21515_140036143408896]--> Product listing for user abc...
+[2017-12-24 08:48:49] [INFO] [genericviews.views] [PID:21515_140036143408896]--> Product listing for user abc...
+[2017-12-24 08:48:52] [INFO] [genericviews.views] [PID:21513_140036143408896]--> Product listing for user abc...
+[2017-12-24 08:48:53] [INFO] [genericviews.views] [PID:21515_140036143408896]--> Product listing for user abc...
+[2017-12-24 08:50:40] [INFO] [genericviews.views] [PID:22055_140277847774976]--> Product listing for user abc...
+[2017-12-24 08:53:06] [INFO] [genericviews.views] [PID:22057_140277847774976]--> Product listing for user abc...
+[2017-12-24 08:53:22] [WARNING] [django.request] [PID:22055_140277847774976]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 08:53:51] [INFO] [genericviews.views] [PID:22055_140277847774976]--> Product listing for user abc...
+[2017-12-24 08:53:59] [INFO] [genericviews.views] [PID:22303_140524016883456]--> Product listing for user abc...
+[2017-12-24 08:55:25] [INFO] [genericviews.views] [PID:22303_140524016883456]--> Product listing for user abc...
+[2017-12-24 08:55:36] [INFO] [genericviews.views] [PID:22634_140693014779648]--> Product listing for user abc...
+[2017-12-24 08:55:49] [INFO] [genericviews.views] [PID:22634_140693014779648]--> Product listing for user abc...
+[2017-12-24 08:55:56] [INFO] [genericviews.views] [PID:22683_140181044496128]--> Product listing for user abc...
+[2017-12-24 08:56:50] [INFO] [genericviews.views] [PID:22764_139716622141184]--> Product listing for user abc...
+[2017-12-24 08:57:39] [INFO] [genericviews.views] [PID:22836_140338104317696]--> Product listing for user abc...
+[2017-12-24 08:58:49] [INFO] [genericviews.views] [PID:22838_140338104317696]--> Product listing for user abc...
+[2017-12-24 08:59:03] [INFO] [genericviews.views] [PID:22983_139745555142400]--> Product listing for user abc...
+[2017-12-24 09:14:30] [WARNING] [django.request] [PID:22983_139745555142400]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:15:05] [INFO] [genericviews.views] [PID:22984_139745555142400]--> Product listing for user abc...
+[2017-12-24 09:15:06] [WARNING] [django.request] [PID:22983_139745555142400]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:15:21] [INFO] [genericviews.views] [PID:22984_139745555142400]--> Product listing for user abc...
+[2017-12-24 09:15:21] [WARNING] [django.request] [PID:22984_139745555142400]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:15:36] [INFO] [genericviews.views] [PID:24054_140642542499584]--> Product listing for user abc...
+[2017-12-24 09:15:36] [WARNING] [django.request] [PID:24053_140642542499584]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:17:03] [INFO] [genericviews.views] [PID:24192_140033112749824]--> Product listing for user abc...
+[2017-12-24 09:17:04] [WARNING] [django.request] [PID:24191_140033112749824]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:17:21] [INFO] [genericviews.views] [PID:24191_140033112749824]--> Product listing for user abc...
+[2017-12-24 09:17:22] [WARNING] [django.request] [PID:24191_140033112749824]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:18:01] [INFO] [genericviews.views] [PID:24191_140033112749824]--> Product listing for user abc...
+[2017-12-24 09:18:01] [WARNING] [django.request] [PID:24192_140033112749824]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:18:07] [INFO] [genericviews.views] [PID:24191_140033112749824]--> Product listing for user abc...
+[2017-12-24 09:18:07] [WARNING] [django.request] [PID:24191_140033112749824]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:18:27] [INFO] [genericviews.views] [PID:24191_140033112749824]--> Product listing for user abc...
+[2017-12-24 09:18:27] [WARNING] [django.request] [PID:24192_140033112749824]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:21:12] [INFO] [genericviews.views] [PID:24578_140161392092928]--> Product listing for user abc...
+[2017-12-24 09:21:13] [WARNING] [django.request] [PID:24577_140161392092928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:21:51] [INFO] [genericviews.views] [PID:24655_140676712249088]--> Product listing for user abc...
+[2017-12-24 09:21:52] [WARNING] [django.request] [PID:24654_140676712249088]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:22:40] [INFO] [genericviews.views] [PID:24749_140253452392192]--> Product listing for user abc...
+[2017-12-24 09:22:41] [WARNING] [django.request] [PID:24749_140253452392192]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:23:53] [INFO] [genericviews.views] [PID:24853_140460442396416]--> Product listing for user abc...
+[2017-12-24 09:23:54] [WARNING] [django.request] [PID:24852_140460442396416]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:27:32] [INFO] [genericviews.views] [PID:24853_140460442396416]--> Product listing for user abc...
+[2017-12-24 09:28:12] [INFO] [genericviews.views] [PID:24852_140460442396416]--> Product listing for user abc...
+[2017-12-24 09:28:15] [INFO] [genericviews.views] [PID:24853_140460442396416]--> Products deleted by user abc...
+[2017-12-24 09:28:15] [INFO] [genericviews.views] [PID:24853_140460442396416]--> Product listing for user abc...
+[2017-12-24 09:28:41] [INFO] [genericviews.views] [PID:25518_140139120043776]--> Product listing for user abc...
+[2017-12-24 09:28:46] [INFO] [genericviews.views] [PID:25519_140139120043776]--> Products deleted by user abc...
+[2017-12-24 09:28:46] [INFO] [genericviews.views] [PID:25519_140139120043776]--> Product listing for user abc...
+[2017-12-24 09:31:21] [INFO] [genericviews.views] [PID:25725_140190414513920]--> Product listing for user abc...
+[2017-12-24 09:31:26] [WARNING] [django.security.csrf] [PID:25729_140190414513920]--> Forbidden (CSRF token missing or incorrect.): /genericviews/
+[2017-12-24 09:31:38] [INFO] [genericviews.views] [PID:25729_140190414513920]--> Product listing for user abc...
+[2017-12-24 09:31:43] [WARNING] [django.request] [PID:25729_140190414513920]--> Method Not Allowed (POST): /genericviews/
+[2017-12-24 09:37:52] [INFO] [genericviews.views] [PID:25725_140190414513920]--> Product listing for user abc...
+[2017-12-24 09:38:01] [WARNING] [django.security.csrf] [PID:25729_140190414513920]--> Forbidden (CSRF token missing or incorrect.): /genericviews/
+[2017-12-24 09:38:37] [WARNING] [django.security.csrf] [PID:25729_140190414513920]--> Forbidden (CSRF token missing or incorrect.): /genericviews/
+[2017-12-24 09:38:42] [WARNING] [django.security.csrf] [PID:25729_140190414513920]--> Forbidden (CSRF token missing or incorrect.): /genericviews/
+[2017-12-24 09:38:45] [INFO] [genericviews.views] [PID:25725_140190414513920]--> Product listing for user abc...
+[2017-12-24 09:38:51] [WARNING] [django.security.csrf] [PID:25725_140190414513920]--> Forbidden (CSRF token missing or incorrect.): /genericviews/
+[2017-12-24 09:39:33] [INFO] [genericviews.views] [PID:26408_139736745498368]--> Product listing for user abc...
+[2017-12-24 09:39:39] [WARNING] [django.request] [PID:26408_139736745498368]--> Method Not Allowed (POST): /genericviews/
+[2017-12-24 09:40:03] [WARNING] [django.request] [PID:26511_140082903176960]--> Method Not Allowed (POST): /genericviews/
+[2017-12-24 09:40:07] [INFO] [genericviews.views] [PID:26511_140082903176960]--> Product listing for user abc...
+[2017-12-24 09:40:14] [WARNING] [django.request] [PID:26512_140082903176960]--> Method Not Allowed (POST): /genericviews/
+[2017-12-24 09:40:53] [WARNING] [django.request] [PID:26512_140082903176960]--> Method Not Allowed (POST): /genericviews/
+[2017-12-24 09:40:56] [INFO] [genericviews.views] [PID:26512_140082903176960]--> Product listing for user abc...
+[2017-12-24 09:41:02] [WARNING] [django.request] [PID:26511_140082903176960]--> Method Not Allowed (POST): /genericviews/
+[2017-12-24 09:41:57] [INFO] [genericviews.views] [PID:26511_140082903176960]--> Product listing for user abc...
+[2017-12-24 09:41:57] [WARNING] [django.request] [PID:26511_140082903176960]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:42:04] [WARNING] [django.request] [PID:26512_140082903176960]--> Method Not Allowed (POST): /genericviews/
+[2017-12-24 09:42:27] [WARNING] [django.request] [PID:26511_140082903176960]--> Method Not Allowed (POST): /genericviews/
+[2017-12-24 09:42:30] [INFO] [genericviews.views] [PID:26511_140082903176960]--> Product listing for user abc...
+[2017-12-24 09:42:30] [WARNING] [django.request] [PID:26512_140082903176960]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:43:05] [WARNING] [django.request] [PID:26512_140082903176960]--> Method Not Allowed (POST): /genericviews/
+[2017-12-24 09:43:50] [INFO] [genericviews.views] [PID:26915_139978936358656]--> Product listing for user abc...
+[2017-12-24 09:43:51] [WARNING] [django.request] [PID:26915_139978936358656]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:43:59] [WARNING] [django.request] [PID:26916_139978936358656]--> Method Not Allowed (POST): /genericviews/
+[2017-12-24 09:45:14] [INFO] [genericviews.views] [PID:27114_139867083777792]--> Product listing for user abc...
+[2017-12-24 09:45:15] [WARNING] [django.request] [PID:27114_139867083777792]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:45:23] [INFO] [genericviews.views] [PID:27113_139867083777792]--> Product listing for user abc...
+[2017-12-24 09:45:23] [WARNING] [django.request] [PID:27114_139867083777792]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:45:40] [INFO] [genericviews.views] [PID:27113_139867083777792]--> Product listing for user abc...
+[2017-12-24 09:45:41] [WARNING] [django.request] [PID:27113_139867083777792]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:46:18] [INFO] [genericviews.views] [PID:27114_139867083777792]--> Product listing for user abc...
+[2017-12-24 09:46:19] [WARNING] [django.request] [PID:27113_139867083777792]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:46:25] [INFO] [genericviews.views] [PID:27113_139867083777792]--> Product listing for user abc...
+[2017-12-24 09:46:25] [WARNING] [django.request] [PID:27113_139867083777792]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:48:06] [INFO] [genericviews.views] [PID:27389_140022941820672]--> Product listing for user abc...
+[2017-12-24 09:48:07] [WARNING] [django.request] [PID:27389_140022941820672]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:48:17] [INFO] [genericviews.views] [PID:27389_140022941820672]--> Product listing for user abc...
+[2017-12-24 09:48:17] [WARNING] [django.request] [PID:27389_140022941820672]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:48:24] [INFO] [genericviews.views] [PID:27389_140022941820672]--> Product listing for user abc...
+[2017-12-24 09:48:25] [WARNING] [django.request] [PID:27389_140022941820672]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:48:30] [INFO] [genericviews.views] [PID:27388_140022941820672]--> Product listing for user abc...
+[2017-12-24 09:48:31] [WARNING] [django.request] [PID:27388_140022941820672]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:50:52] [INFO] [genericviews.views] [PID:27388_140022941820672]--> Product listing for user abc...
+[2017-12-24 09:50:53] [WARNING] [django.request] [PID:27389_140022941820672]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:51:03] [INFO] [genericviews.views] [PID:27755_139965788264192]--> Getting filter data for user abc...
+[2017-12-24 09:51:03] [INFO] [genericviews.views] [PID:27755_139965788264192]--> Product listing for user abc...
+[2017-12-24 09:51:04] [WARNING] [django.request] [PID:27756_139965788264192]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:52:38] [INFO] [genericviews.views] [PID:27755_139965788264192]--> Getting filter data for user abc...
+[2017-12-24 09:52:38] [INFO] [genericviews.views] [PID:27755_139965788264192]--> Product listing for user abc...
+[2017-12-24 09:52:39] [WARNING] [django.request] [PID:27756_139965788264192]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:53:09] [INFO] [genericviews.views] [PID:27932_139744366266112]--> Getting filter data for user abc...
+[2017-12-24 09:53:09] [INFO] [genericviews.views] [PID:27932_139744366266112]--> Product listing for user abc...
+[2017-12-24 09:53:10] [WARNING] [django.request] [PID:27932_139744366266112]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 09:53:26] [INFO] [genericviews.views] [PID:27932_139744366266112]--> Getting filter data for user abc...
+[2017-12-24 09:53:26] [INFO] [genericviews.views] [PID:27932_139744366266112]--> Product listing for user abc...
+[2017-12-24 09:54:05] [INFO] [genericviews.views] [PID:28064_140386045589248]--> Getting filter data for user abc...
+[2017-12-24 09:54:05] [ERROR] [django.request] [PID:28064_140386045589248]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/home/manshrestha/Documents/website/genericviews/views.py", line 71, in get_queryset
+    print (name, msg)
+NameError: name 'name' is not defined
+[2017-12-24 09:54:09] [INFO] [genericviews.views] [PID:28065_140386045589248]--> Getting filter data for user abc...
+[2017-12-24 09:54:09] [ERROR] [django.request] [PID:28065_140386045589248]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 142, in get
+    self.object_list = self.get_queryset()
+  File "/home/manshrestha/Documents/website/genericviews/views.py", line 71, in get_queryset
+    print (name, msg)
+NameError: name 'name' is not defined
+[2017-12-24 09:54:35] [INFO] [genericviews.views] [PID:28271_140650065078016]--> Getting filter data for user abc...
+[2017-12-24 09:54:35] [INFO] [genericviews.views] [PID:28271_140650065078016]--> Product listing for user abc...
+[2017-12-24 09:55:53] [INFO] [genericviews.views] [PID:28272_140650065078016]--> Getting filter data for user abc...
+[2017-12-24 09:55:53] [INFO] [genericviews.views] [PID:28272_140650065078016]--> Product listing for user abc...
+[2017-12-24 10:01:22] [INFO] [genericviews.views] [PID:28272_140650065078016]--> Getting filter data for user abc...
+[2017-12-24 10:01:22] [INFO] [genericviews.views] [PID:28272_140650065078016]--> Product listing for user abc...
+[2017-12-24 10:01:39] [INFO] [genericviews.views] [PID:28272_140650065078016]--> Getting filter data for user abc...
+[2017-12-24 10:01:39] [INFO] [genericviews.views] [PID:28272_140650065078016]--> Product listing for user abc...
+[2017-12-24 10:01:50] [INFO] [genericviews.views] [PID:28791_140218266060544]--> Getting filter data for user abc...
+[2017-12-24 10:01:50] [INFO] [genericviews.views] [PID:28791_140218266060544]--> Product listing for user abc...
+[2017-12-24 10:03:11] [INFO] [genericviews.views] [PID:28940_140701545862912]--> Getting filter data for user abc...
+[2017-12-24 10:03:11] [INFO] [genericviews.views] [PID:28940_140701545862912]--> Product listing for user abc...
+[2017-12-24 10:03:27] [INFO] [genericviews.views] [PID:28938_140701545862912]--> Getting filter data for user abc...
+[2017-12-24 10:03:27] [INFO] [genericviews.views] [PID:28938_140701545862912]--> Product listing for user abc...
+[2017-12-24 10:03:35] [INFO] [genericviews.views] [PID:28984_140429617530624]--> Getting filter data for user abc...
+[2017-12-24 10:03:35] [INFO] [genericviews.views] [PID:28984_140429617530624]--> Product listing for user abc...
+[2017-12-24 10:04:06] [INFO] [genericviews.views] [PID:28983_140429617530624]--> Product listing for user abc...
+[2017-12-24 10:07:54] [INFO] [genericviews.views] [PID:29410_140612856887040]--> Product listing for user abc...
+[2017-12-24 10:08:18] [INFO] [genericviews.views] [PID:29410_140612856887040]--> Getting filter data for user abc...
+[2017-12-24 10:08:18] [INFO] [genericviews.views] [PID:29410_140612856887040]--> Product listing according to record id and product title for user abc...
+[2017-12-24 10:10:14] [INFO] [genericviews.views] [PID:29698_140566388020992]--> Getting filter data for user abc...
+[2017-12-24 10:10:14] [INFO] [genericviews.views] [PID:29698_140566388020992]--> Product listing according to record id and product title for user abc...
+[2017-12-24 10:10:20] [INFO] [genericviews.views] [PID:29698_140566388020992]--> Getting filter data for user abc...
+[2017-12-24 10:10:20] [INFO] [genericviews.views] [PID:29698_140566388020992]--> Product listing according to record id for user abc...
+[2017-12-24 10:10:26] [INFO] [genericviews.views] [PID:29699_140566388020992]--> Getting filter data for user abc...
+[2017-12-24 10:10:26] [ERROR] [django.request] [PID:29699_140566388020992]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 10:20:44] [INFO] [genericviews.views] [PID:29699_140566388020992]--> Getting filter data for user abc...
+[2017-12-24 10:20:44] [ERROR] [django.request] [PID:29699_140566388020992]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 10:21:06] [INFO] [genericviews.views] [PID:29699_140566388020992]--> Getting filter data for user abc...
+[2017-12-24 10:21:06] [ERROR] [django.request] [PID:29699_140566388020992]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 10:21:15] [INFO] [genericviews.views] [PID:30301_140691374606080]--> Getting filter data for user abc...
+[2017-12-24 10:21:15] [ERROR] [django.request] [PID:30301_140691374606080]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 10:21:42] [INFO] [genericviews.views] [PID:30377_139916580509440]--> Getting filter data for user abc...
+[2017-12-24 10:21:42] [ERROR] [django.request] [PID:30377_139916580509440]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 14:04:01] [INFO] [genericviews.views] [PID:30373_139916580509440]--> Getting filter data for user abc...
+[2017-12-24 14:04:01] [ERROR] [django.request] [PID:30373_139916580509440]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 14:10:21] [INFO] [genericviews.views] [PID:30377_139916580509440]--> Getting filter data for user abc...
+[2017-12-24 14:10:21] [ERROR] [django.request] [PID:30377_139916580509440]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 14:10:44] [INFO] [genericviews.views] [PID:11793_139787952633600]--> Getting filter data for user abc...
+[2017-12-24 14:10:44] [ERROR] [django.request] [PID:11793_139787952633600]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 14:10:45] [INFO] [genericviews.views] [PID:11793_139787952633600]--> Getting filter data for user abc...
+[2017-12-24 14:10:45] [ERROR] [django.request] [PID:11793_139787952633600]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 14:11:31] [INFO] [genericviews.views] [PID:11792_139787952633600]--> Getting filter data for user abc...
+[2017-12-24 14:11:31] [ERROR] [django.request] [PID:11792_139787952633600]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 14:11:32] [INFO] [genericviews.views] [PID:11792_139787952633600]--> Getting filter data for user abc...
+[2017-12-24 14:11:32] [ERROR] [django.request] [PID:11792_139787952633600]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 14:11:39] [INFO] [genericviews.views] [PID:11911_140202662881024]--> Getting filter data for user abc...
+[2017-12-24 14:11:39] [ERROR] [django.request] [PID:11911_140202662881024]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 14:11:41] [INFO] [genericviews.views] [PID:11911_140202662881024]--> Getting filter data for user abc...
+[2017-12-24 14:11:42] [ERROR] [django.request] [PID:11911_140202662881024]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 14:11:46] [INFO] [genericviews.views] [PID:11912_140202662881024]--> Product listing for user abc...
+[2017-12-24 14:11:50] [INFO] [genericviews.views] [PID:11911_140202662881024]--> Getting filter data for user abc...
+[2017-12-24 14:11:50] [ERROR] [django.request] [PID:11911_140202662881024]--> Internal Server Error: /genericviews/
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 85, in count
+    return self.object_list.count()
+AttributeError: 'NoneType' object has no attribute 'count'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/contrib/auth/mixins.py", line 52, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/base.py", line 89, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 65, in page
+    number = self.validate_number(number)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 43, in validate_number
+    if number > self.num_pages:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 95, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/utils/functional.py", line 36, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/manshrestha/django2/lib/python3.5/site-packages/django/core/paginator.py", line 90, in count
+    return len(self.object_list)
+TypeError: object of type 'NoneType' has no len()
+[2017-12-24 14:14:43] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Product listing for user abc...
+[2017-12-24 14:14:48] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Product listing for user abc...
+[2017-12-24 14:14:53] [INFO] [genericviews.views] [PID:12173_140543622285056]--> Getting filter data for user abc...
+[2017-12-24 14:14:53] [INFO] [genericviews.views] [PID:12173_140543622285056]--> Product listing according to record id for user abc...
+[2017-12-24 14:14:57] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Product listing for user abc...
+[2017-12-24 14:14:59] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Product listing for user abc...
+[2017-12-24 14:15:05] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Getting filter data for user abc...
+[2017-12-24 14:15:05] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Product listing according to product title for user abc...
+[2017-12-24 14:15:13] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Getting filter data for user abc...
+[2017-12-24 14:15:13] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Product listing according to record id and product title for user abc...
+[2017-12-24 14:15:20] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Getting filter data for user abc...
+[2017-12-24 14:15:20] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Product listing according to record id and product title for user abc...
+[2017-12-24 14:15:31] [INFO] [genericviews.views] [PID:12173_140543622285056]--> Getting filter data for user abc...
+[2017-12-24 14:15:31] [INFO] [genericviews.views] [PID:12173_140543622285056]--> Product listing according to record id and product title for user abc...
+[2017-12-24 14:15:39] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Getting filter data for user abc...
+[2017-12-24 14:15:39] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Product listing according to record id and product title for user abc...
+[2017-12-24 14:16:12] [INFO] [genericviews.views] [PID:12173_140543622285056]--> Product listing for user abc...
+[2017-12-24 14:16:19] [INFO] [genericviews.views] [PID:12175_140543622285056]--> Product listing for user abc...
+[2017-12-24 14:26:51] [INFO] [genericviews.views] [PID:13230_140569299113728]--> Product listing for user abc...
+[2017-12-24 14:27:41] [INFO] [genericviews.views] [PID:13312_140114226235136]--> Product listing for user abc...
+[2017-12-24 14:27:58] [WARNING] [django.request] [PID:13312_140114226235136]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:28:02] [INFO] [genericviews.views] [PID:13369_140308270044928]--> Product listing for user abc...
+[2017-12-24 14:28:03] [WARNING] [django.request] [PID:13368_140308270044928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:28:19] [INFO] [genericviews.views] [PID:13368_140308270044928]--> Product listing for user abc...
+[2017-12-24 14:28:19] [WARNING] [django.request] [PID:13368_140308270044928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:28:21] [INFO] [genericviews.views] [PID:13369_140308270044928]--> Product listing for user abc...
+[2017-12-24 14:28:22] [WARNING] [django.request] [PID:13368_140308270044928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:28:35] [INFO] [genericviews.views] [PID:13429_139737235420928]--> Product listing for user abc...
+[2017-12-24 14:28:36] [WARNING] [django.request] [PID:13428_139737235420928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:28:38] [INFO] [genericviews.views] [PID:13428_139737235420928]--> Product listing for user abc...
+[2017-12-24 14:28:39] [WARNING] [django.request] [PID:13428_139737235420928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:28:42] [INFO] [genericviews.views] [PID:13429_139737235420928]--> Product listing for user abc...
+[2017-12-24 14:28:43] [WARNING] [django.request] [PID:13428_139737235420928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:28:47] [INFO] [genericviews.views] [PID:13429_139737235420928]--> Product listing for user abc...
+[2017-12-24 14:28:47] [WARNING] [django.request] [PID:13428_139737235420928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:29:03] [INFO] [genericviews.views] [PID:13481_140048239068928]--> Product listing for user abc...
+[2017-12-24 14:29:04] [WARNING] [django.request] [PID:13481_140048239068928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:29:06] [INFO] [genericviews.views] [PID:13483_140048239068928]--> Product listing for user abc...
+[2017-12-24 14:29:07] [WARNING] [django.request] [PID:13483_140048239068928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:29:10] [INFO] [genericviews.views] [PID:13481_140048239068928]--> Product listing for user abc...
+[2017-12-24 14:29:10] [WARNING] [django.request] [PID:13481_140048239068928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:29:15] [INFO] [genericviews.views] [PID:13481_140048239068928]--> Product listing for user abc...
+[2017-12-24 14:29:15] [WARNING] [django.request] [PID:13483_140048239068928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:29:18] [INFO] [genericviews.views] [PID:13481_140048239068928]--> Product listing for user abc...
+[2017-12-24 14:29:18] [WARNING] [django.request] [PID:13483_140048239068928]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:33:05] [INFO] [genericviews.views] [PID:13797_140615555327744]--> Product listing for user abc...
+[2017-12-24 14:33:06] [WARNING] [django.request] [PID:13797_140615555327744]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:33:09] [INFO] [genericviews.views] [PID:13797_140615555327744]--> Product listing for user abc...
+[2017-12-24 14:33:09] [WARNING] [django.request] [PID:13797_140615555327744]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:35:07] [INFO] [genericviews.views] [PID:13962_140573956634368]--> Product listing for user abc...
+[2017-12-24 14:35:09] [WARNING] [django.request] [PID:13962_140573956634368]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:35:35] [INFO] [genericviews.views] [PID:14030_139807376127744]--> Product listing for user abc...
+[2017-12-24 14:35:36] [WARNING] [django.request] [PID:14030_139807376127744]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:36:13] [INFO] [genericviews.views] [PID:14112_139713364412160]--> Product listing for user abc...
+[2017-12-24 14:36:13] [WARNING] [django.request] [PID:14112_139713364412160]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:36:44] [INFO] [genericviews.views] [PID:14192_139885765465856]--> Product listing for user abc...
+[2017-12-24 14:36:45] [WARNING] [django.request] [PID:14192_139885765465856]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:37:04] [INFO] [genericviews.views] [PID:14237_140693988648704]--> Product listing for user abc...
+[2017-12-24 14:37:05] [WARNING] [django.request] [PID:14237_140693988648704]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:37:43] [INFO] [genericviews.views] [PID:14279_140119980992256]--> Product listing for user abc...
+[2017-12-24 14:37:43] [WARNING] [django.request] [PID:14279_140119980992256]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:37:48] [INFO] [genericviews.views] [PID:14279_140119980992256]--> Product listing for user abc...
+[2017-12-24 14:37:48] [WARNING] [django.request] [PID:14278_140119980992256]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:38:23] [INFO] [genericviews.views] [PID:14345_140478280410880]--> Product listing for user abc...
+[2017-12-24 14:38:23] [WARNING] [django.request] [PID:14345_140478280410880]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:38:37] [INFO] [genericviews.views] [PID:14387_140019224139520]--> Product listing for user abc...
+[2017-12-24 14:38:38] [WARNING] [django.request] [PID:14386_140019224139520]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:39:06] [INFO] [genericviews.views] [PID:14464_140698006828800]--> Product listing for user abc...
+[2017-12-24 14:39:07] [WARNING] [django.request] [PID:14466_140698006828800]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:39:25] [INFO] [genericviews.views] [PID:14495_140409477232384]--> Product listing for user abc...
+[2017-12-24 14:39:26] [WARNING] [django.request] [PID:14497_140409477232384]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:39:40] [INFO] [genericviews.views] [PID:14539_140320875800320]--> Product listing for user abc...
+[2017-12-24 14:39:40] [WARNING] [django.request] [PID:14540_140320875800320]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:39:55] [INFO] [genericviews.views] [PID:14589_140155373057792]--> Product listing for user abc...
+[2017-12-24 14:39:56] [WARNING] [django.request] [PID:14589_140155373057792]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:40:47] [INFO] [genericviews.views] [PID:14690_139716392638208]--> Product listing for user abc...
+[2017-12-24 14:40:47] [WARNING] [django.request] [PID:14692_139716392638208]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:41:49] [INFO] [genericviews.views] [PID:14793_139828521420544]--> Product listing for user abc...
+[2017-12-24 14:41:54] [WARNING] [django.request] [PID:14791_139828521420544]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:43:20] [INFO] [genericviews.views] [PID:14791_139828521420544]--> Product listing for user abc...
+[2017-12-24 14:43:20] [WARNING] [django.request] [PID:14793_139828521420544]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:44:30] [INFO] [genericviews.views] [PID:15032_140435965564672]--> Product listing for user abc...
+[2017-12-24 14:44:31] [WARNING] [django.request] [PID:15032_140435965564672]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:44:33] [INFO] [genericviews.views] [PID:15032_140435965564672]--> Getting filter data for user abc...
+[2017-12-24 14:44:33] [INFO] [genericviews.views] [PID:15032_140435965564672]--> Product listing according to record id for user abc...
+[2017-12-24 14:44:34] [WARNING] [django.request] [PID:15031_140435965564672]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:44:41] [INFO] [genericviews.views] [PID:15032_140435965564672]--> Getting filter data for user abc...
+[2017-12-24 14:44:41] [INFO] [genericviews.views] [PID:15032_140435965564672]--> Product listing according to record id for user abc...
+[2017-12-24 14:44:42] [WARNING] [django.request] [PID:15031_140435965564672]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:44:50] [INFO] [genericviews.views] [PID:15032_140435965564672]--> Getting filter data for user abc...
+[2017-12-24 14:44:50] [INFO] [genericviews.views] [PID:15032_140435965564672]--> Product listing according to product title for user abc...
+[2017-12-24 14:44:50] [WARNING] [django.request] [PID:15031_140435965564672]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:46:37] [INFO] [genericviews.views] [PID:15231_140061874366208]--> Getting filter data for user abc...
+[2017-12-24 14:46:37] [INFO] [genericviews.views] [PID:15231_140061874366208]--> Product listing according to product title for user abc...
+[2017-12-24 14:46:38] [WARNING] [django.request] [PID:15229_140061874366208]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:46:46] [INFO] [genericviews.views] [PID:15229_140061874366208]--> Getting filter data for user abc...
+[2017-12-24 14:46:46] [INFO] [genericviews.views] [PID:15229_140061874366208]--> Product listing according to record id for user abc...
+[2017-12-24 14:46:46] [WARNING] [django.request] [PID:15231_140061874366208]--> Not Found: /static/genericviews/css/bootstrap.css.map
+[2017-12-24 14:46:59] [INFO] [genericviews.views] [PID:15229_140061874366208]--> Getting filter data for user abc...
+[2017-12-24 14:46:59] [INFO] [genericviews.views] [PID:15229_140061874366208]--> Product listing according to product title for user abc...
+[2017-12-24 14:46:59] [WARNING] [django.request] [PID:15231_140061874366208]--> Not Found: /static/genericviews/css/bootstrap.css.map
